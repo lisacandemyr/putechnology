@@ -41,12 +41,12 @@
 }
 
 .logo-text {
-  animation: fadeIn 4s;
+  animation: fadeIn 8s;
   transition: all 300ms ease-in-out;
 }
     
 .logo-description {
-  animation: fadeIn 4s;
+  animation: fadeIn 8s;
   font-size: 7.75px;
   font-weight: 700;
   letter-spacing: 0;
@@ -210,11 +210,13 @@
 }
 
 .logo-text {
+  animation: fadeIn 4s;
   position: relative;
   left: -3px;
 }
         
 .logo-description {
+  animation: fadeIn 4s;
   font-size: 7.50px;
   position: absolute;
   top: 49px;
