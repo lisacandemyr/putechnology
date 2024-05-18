@@ -1,0 +1,170 @@
+:root {
+  --font-family-head: "Red Hat Display", sans-serif;
+  --font-family-text: "Red Hat Text", sans-serif;
+  --font-autorim: "Quicksand", sans-serif;
+  --font-krauss-maffei: "Roboto", sans-serif;
+  --font-putechnology: "Nova Round", system-ui;
+  --background-color: rgb(255, 255, 255);
+  --light-color: rgb(227, 244, 247);
+  --border-color: #dbdbdb;
+  --primary-color: rgb(108, 176, 227);
+  --dark-color: rgb(44, 44, 44);
+}
+
+body {
+  color: var(--dark-color);
+  font-family: var(--font-family-head);
+}
+
+.hidden {
+  display: none;
+}
+
+.float-left {
+  animation: floatLeft 2.5s;
+}
+
+.float-right {
+  animation: floatRight 2.5s;
+}
+
+.float-down {
+  animation: floatDown 2.5s;
+}
+
+.float-up {
+animation: floatUp 2.5s;
+}
+
+@keyframes floatLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  } 
+  65% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes floatRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  } 
+  65% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes floatDown {
+0% {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+100% {
+  opacity: 1;
+  transform: translateY(0%);
+}
+}
+
+@keyframes floatUp {
+0% {
+  opacity: 0;
+  transform: translateY(100%);
+}
+100% {
+  opacity: 1;
+  transform: translateY(-0%);
+}
+}
+
+.grain {
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateZ(0);
+  z-index: 0;
+}
+
+.grain::before {
+  animation: noise 7s steps(10) infinite;
+  background-image: url(grain.jpg);
+  background-size: 200px;
+  background-repeat: repeat;
+  content: "";
+  filter: var(--filter);
+  height: 600%;
+  width: 600%;
+  opacity: 0.2;
+  pointer-events: none;
+  position: fixed;
+  top: -300%;
+  left: -150%;
+  z-index: 9999;
+}
+
+@keyframes noise {
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%);
+  }
+  70% {
+    transform: translateY(15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  background-clip: content-box;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  transition: all 300ms ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+}
