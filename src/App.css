@@ -51,13 +51,14 @@ animation: floatUp 2.5s;
   }
 }
 
+/* Correct for Navbar */
 @keyframes floatRight {
   0% {
-    opacity: 0;
+opacity: 0;
     transform: translateX(-100%);
   } 
   65% {
-    opacity: 0;
+opacity: 1;
     transform: translateX(-100%);
   }
   100% {
@@ -66,13 +67,12 @@ animation: floatUp 2.5s;
   }
 }
 
+/* Correct for Navbar */
 @keyframes floatDown {
 0% {
-  opacity: 0;
   transform: translateY(-100%);
 }
 100% {
-  opacity: 1;
   transform: translateY(0%);
 }
 }
