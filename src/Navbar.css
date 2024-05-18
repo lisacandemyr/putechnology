@@ -200,6 +200,11 @@
   letter-spacing: -10px;
   z-index: 1;
 }
+
+.logo-text {
+  position: relative;
+  left: -3px;
+}
         
 .logo-description {
   position: absolute;
