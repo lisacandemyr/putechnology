@@ -210,7 +210,7 @@ main img {
       
 @media (max-width: 450px) { 
 main {
-  margin: 75px 45px 0 25px;
+  margin: 100px 45px 0 25px;
 }
 
 main .col-lg-7 {
