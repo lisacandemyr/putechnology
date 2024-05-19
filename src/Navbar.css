@@ -192,14 +192,17 @@
 .logo {
   animation: floatDown 2s;
   color: var(--background-color);
-  top: -16px;
+  position: fixed;
+  top: -5px;
+  left: 20px;
   z-index: 3;
 }
 
 .logo-bg {
   animation: floatDown 2s;
+  position: fixed;
   top: 3px;
-  left: 42px;
+  left: 0;
   z-index: -1;
 }
         
@@ -220,7 +223,7 @@
   font-size: 7.50px;
   position: absolute;
   top: 49px;
-  left: 124px;
+  left: 50px;
 }
     
 .btn-container {
