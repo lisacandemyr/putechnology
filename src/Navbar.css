@@ -194,7 +194,7 @@
   animation: floatDown 2s;
   color: var(--background-color);
   position: fixed;
-  top: -5px;
+  top: -8px;
   left: 20px;
   z-index: 3;
 }
