@@ -66,6 +66,19 @@ main img {
   width: 450px;
 }
 
+@keyframes introFadeIn {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    1% {
+      visibility: visible;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
 @keyframes floatRightIntro {
   0% {
     opacity: 0;
@@ -183,14 +196,14 @@ main {
 }
 
 main h1 {
-  animation: fadeIn 8s;
+  animation: floatRightIntro 4s;
   font-size: 90px;
   letter-spacing: -4px;
   line-height: 52px;
 }
         
 main h2 {
-  animation: fadeIn 8s;
+  animation: floatLeftIntro 4s;
   font-size: 75px;
   font-weight: 850;
   letter-spacing: -3px;
@@ -198,12 +211,14 @@ main h2 {
 }
     
 main .main-description-1 {
-  animation: floatRightIntro 4s;
+  animation: introFadeIn 2s linear 4s;
+  visibility: hidden;
   margin: 15px 0 30px 10px; 
 }
     
 main .main-description-2 {
-  animation: floatLeftIntro 4s;
+  animation: introFadeIn 2s linear 4s;
+  visibility: hidden;
   margin: -4px 0 30px 10px; 
 }
         

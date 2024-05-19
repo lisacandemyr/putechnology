@@ -164,27 +164,15 @@
   transition: visibility 0s  linear 1s;
 }
 
-@keyframes fadeIn {
+@keyframes menuBtnFadeIn {
   0% {
     opacity: 0;
   }
   50% {
-    opacity: 1;
+    opacity: 0.75;
   }
   100% {
-    opacity: 1;
-  }
-}
-  
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
+    opacity: 0.75;
   }
 }
   
@@ -247,7 +235,7 @@
 }
 
 .menu-btn-unselected {
-  animation: fadeIn 2.5s;
+  animation: menuBtnFadeIn 2.5s;
 }
     
 .close-menu-btn {
