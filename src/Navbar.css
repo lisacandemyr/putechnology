@@ -163,30 +163,6 @@
   visibility: hidden;
   transition: visibility 0s  linear 1s;
 }
-
-@keyframes fadeIn {
-0% {
-  opacity: 0;
-}
-50% {
-  opacity: 1;
-}
-100% {
-  opacity: 1;
-}
-}
-
-@keyframes fadeOut {
-0% {
-  opacity: 1;
-}
-50% {
-  opacity: 0;
-}
-100% {
-  opacity: 0;
-}
-}
   
 @media (max-width: 550px) {
 .logo {
@@ -244,6 +220,10 @@
   animation: fadeOut 2.5s;
   visibility: hidden;
   transition: visibility 0s linear 1s;
+}
+
+.menu-btn-unselected {
+  animation: fadeIn 2.5s;
 }
     
 .close-menu-btn {
