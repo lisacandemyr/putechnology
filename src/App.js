@@ -1,4 +1,5 @@
 import Navbar from "./Navbar.js";
+import Introduction from "./Introduction.js";
 import "./App.css";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <div className="grain"></div>
       <div className="overlay"></div>
       <Navbar />
+      <Introduction />
     </div>
   );
 }
