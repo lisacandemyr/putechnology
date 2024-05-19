@@ -76,6 +76,7 @@ main img {
     }
     100% {
       opacity: 1;
+      visibility: visible;
     }
 }
 
@@ -211,13 +212,13 @@ main h2 {
 }
     
 main .main-description-1 {
-  animation: introFadeIn 2s linear 4s;
+  animation: introFadeIn 2s linear 4.5s forwards;
   visibility: hidden;
   margin: 15px 0 30px 10px; 
 }
     
 main .main-description-2 {
-  animation: introFadeIn 2s linear 4s;
+  animation: introFadeIn 2s linear 4.5s forwards;
   visibility: hidden;
   margin: -4px 0 30px 10px; 
 }

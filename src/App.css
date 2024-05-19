@@ -75,7 +75,6 @@ animation: floatUp 2.5s;
   }
 }
 
-/* Correct for Navbar */
 @keyframes floatRight {
   0% {
 opacity: 0;
@@ -91,7 +90,6 @@ opacity: 1;
   }
 }
 
-/* Correct for Navbar */
 @keyframes floatDown {
 0% {
   transform: translateY(-100%);
