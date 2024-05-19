@@ -194,14 +194,16 @@ main h2 {
     
 main .main-description-1 {
   animation: floatRightIntro 4s;
+  margin: 15px 0 30px 5px; 
 }
     
 main .main-description-2 {
   animation: floatLeftIntro 4s;
-  margin: -4px 0 30px 0; 
+  margin: -4px 0 30px 5px; 
 }
         
 main img {
+  margin-left: 10px;
   width: 350px;
 }  
 }
