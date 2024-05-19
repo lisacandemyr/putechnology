@@ -24,7 +24,7 @@
 }
     
 .logotype {
-  animation: fadeIn 4s;
+  animation: lowOpacityFadeIn 4s;
   color: var(--background-color);
   font-family: var(--font-putechnology);
   font-size: 55px;
@@ -164,7 +164,7 @@
   transition: visibility 0s  linear 1s;
 }
 
-@keyframes menuBtnFadeIn {
+@keyframes lowOpacityFadeIn {
   0% {
     opacity: 0;
   }
@@ -235,7 +235,7 @@
 }
 
 .menu-btn-unselected {
-  animation: menuBtnFadeIn 2.5s;
+  animation: lowOpacityFadeIn 2.5s;
 }
     
 .close-menu-btn {
