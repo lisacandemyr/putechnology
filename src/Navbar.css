@@ -204,6 +204,7 @@
 }
 
 .logo-bg-2 {
+  animation: floatRight 1.5s;
   display: block;
   position: fixed;
   top: 3px;
@@ -232,7 +233,7 @@
 }
     
 .btn-container {
-  animation: floatDown 2s;
+  animation: floatDown 1.5s;
   display: flex;
   justify-content: flex-end;
   padding-right: 20px;
