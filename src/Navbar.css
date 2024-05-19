@@ -190,7 +190,6 @@
   
 @media (max-width: 550px) {
 .logo {
-  animation: floatDown 2s;
   color: var(--background-color);
   position: fixed;
   top: -5px;
@@ -199,7 +198,6 @@
 }
 
 .logo-bg {
-  animation: floatDown 2s;
   position: fixed;
   top: 3px;
   left: 0;
@@ -207,19 +205,19 @@
 }
         
 .logotype {
+  animation: none;
   font-size: 50px;
   letter-spacing: -10px;
   z-index: 1;
 }
 
 .logo-text {
-  animation: fadeIn 4s;
   position: relative;
   left: -3px;
 }
         
 .logo-description {
-  animation: fadeIn 4s;
+  animation: none;
   font-size: 7.50px;
   position: absolute;
   top: 49px;

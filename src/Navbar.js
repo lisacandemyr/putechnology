@@ -25,7 +25,7 @@ function Navbar() {
     <div className="Navbar">
       <nav className="navbar" id="home">
         <div className="btn-container">
-          <button className={`menu-btn ${isMenuOpen ? 'menu-btn-clicked' : ''}`} id="menu-btn" onClick={showOffCanvasMenu}>
+          <button className={`menu-btn ${isMenuOpen ? 'menu-btn-clicked' : 'menu-btn-non-selected'}`} id="menu-btn" onClick={showOffCanvasMenu}>
             <i className="fa-regular fa-bars-staggered"></i>
           </button>
         </div>
