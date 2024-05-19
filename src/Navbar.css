@@ -22,6 +22,19 @@
   z-index: 1;
   transition: all 300ms ease-in-out;
 }
+
+.logo-bg-2 {
+  animation: floatRight 2s;
+  background: var(--primary-color);
+  border-radius: 50%;
+  display: none;
+  padding: 33px;
+  position: relative;
+  top: 1.75px;
+  left: 60px;
+  z-index: 1;
+  transition: all 300ms ease-in-out;
+}
     
 .logotype {
   animation: lowOpacityFadeIn 4s;
@@ -178,6 +191,7 @@
   
 @media (max-width: 550px) {
 .logo {
+  animation: floatDown 2s;
   color: var(--background-color);
   position: fixed;
   top: -5px;
@@ -186,6 +200,11 @@
 }
 
 .logo-bg {
+  display: none;
+}
+
+.logo-bg-2 {
+  display: block;
   position: fixed;
   top: 3px;
   left: 0;

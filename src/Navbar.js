@@ -29,8 +29,9 @@ function Navbar() {
             <i className="fa-regular fa-bars-staggered"></i>
           </button>
         </div>
+        <span className="logo-bg-2"></span>
         <div className="logo">
-          <span className="logo-bg"></span>
+        <span className="logo-bg"></span>
           <span className="logotype">pu</span>
           <span className="logo-text">technology</span>
           <span className="logo-description">experts in polyurethanes</span>
