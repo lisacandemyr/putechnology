@@ -1,5 +1,6 @@
 import Navbar from "./Navbar.js";
 import Introduction from "./Introduction.js";
+import Services from "./Services.js";
 import "./App.css";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <div className="overlay"></div>
       <Navbar />
       <Introduction />
+      <Services />
     </div>
   );
 }
