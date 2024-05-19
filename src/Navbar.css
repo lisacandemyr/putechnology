@@ -235,7 +235,7 @@
 }
     
 .menu-btn {
-  animation: fadeIn 2s;
+  animation: floatDown 2s;
   margin-top: 8px;
   padding: 0;
 }
