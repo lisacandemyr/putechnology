@@ -176,7 +176,7 @@ main img {
       
 @media (max-width: 550px) {
 main {
-  margin: 75px 0 0 100px;
+  margin: 100px 0 0 100px;
 }
 
 main h1 {
@@ -194,16 +194,16 @@ main h2 {
     
 main .main-description-1 {
   animation: floatRightIntro 4s;
-  margin: 15px 0 30px 5px; 
+  margin: 15px 0 30px 10px; 
 }
     
 main .main-description-2 {
   animation: floatLeftIntro 4s;
-  margin: -4px 0 30px 5px; 
+  margin: -4px 0 30px 10px; 
 }
         
 main img {
-  margin-left: 10px;
+  margin-left: 20px;
   width: 350px;
 }  
 }
@@ -235,7 +235,7 @@ main .main-description-1 {
 main .main-description-2 {
   font-size: 17px;
   letter-spacing: -0.5px;
-  margin: -5px 0 50px 0; 
+  margin: -5px 0 50px 10px; 
 }
     
 main img {
