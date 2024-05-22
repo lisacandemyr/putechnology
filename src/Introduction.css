@@ -135,7 +135,7 @@ main img {
       
 @media (max-width: 450px) { 
 main {
-  margin-top: 100px;
+  margin-top: 135px;
 }
   
 main h1 {
@@ -151,7 +151,7 @@ main h2 {
       
 main h2 span {
   font-size: 80px;
-  letter-spacing: -10px;
+  letter-spacing: -15px;
   margin-right: 10px;
 } 
 
