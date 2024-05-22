@@ -1,3 +1,7 @@
+.services {
+  overflow: hidden;
+}
+
 .services h3 {
   font-size: 50px;
   font-weight: 700;
@@ -150,16 +154,34 @@
       
 @media (max-width: 450px) {     
 .services h3 {
-  font-size: 40px;
+  font-size: 35px;
   letter-spacing: -1.25px;
   line-height: 40px;
-  margin: 0 10px 0 10px;
+  margin: 0 20px 0 20px;
 }
 
 .services .description {
-  margin: 20px;
-} 
-      
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  margin: 10px 20px 20px 20px;
+}
+
+.services button {
+  font-size: 15px;
+  letter-spacing: 0px;
+}
+
+.services h5 {
+  font-size: 15px;
+  letter-spacing: 0px;
+}
+  
+.services p {
+  font-size: 15px;
+  letter-spacing: 0px;
+}
+     
 .services .col {
   min-width: 300px;
 }
