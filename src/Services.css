@@ -3,14 +3,15 @@
   font-weight: 700;
   letter-spacing: -2px;
   line-height: 50px;    
-  padding: 75px 100px 0 160px;
+  padding-top: 75px;
+  margin: 0 100px 0 160px;
 }
   
 .services .description {
     font-size: 18px;
     letter-spacing: 0.25px;
     line-height: 24px;
-    padding: 15px 100px 25px 160px;
+    margin: 15px 100px 25px 160px;
 }
   
 .services .row {
@@ -93,52 +94,53 @@
 }
 
 @media (max-width: 1200px) {
-  .services h3 {
-    padding: 50px 80px 0 140px;
-  }
+.services h3 {
+  padding-top: 50px;
+  margin: 0 80px 0 140px;
+}
 
 .services .description {
-  padding: 15px 80px 25px 140px;
+  margin: 15px 80px 25px 140px;
 }
 }
 
 @media (max-width: 991.5px) {
-  .services h3 {
-    padding: 50px 70px 0 130px;
-  }
+.services h3 {
+  margin: 0 70px 0 130px;
+}
 
 .services .description {
-  padding: 15px 70px 25px 130px;
+  margin: 15px 70px 25px 130px;
 }
 }
 
 @media (max-width: 920px) {
 .services h3 {
-  padding: 50px 60px 0 120px;
+  margin: 0 60px 0 120px;
 }
       
 .services .description {
-  padding: 25px 60px 50px 120px;
+  margin: 25px 60px 50px 120px;
 }    
 }
       
 @media (max-width: 800px) {  
 .services h3 {
-  padding: 50px 40px 0 100px;
+  margin: 0 40px 0 100px;
 }
     
 .services .description {
-  padding: 25px 40px 50px 100px;
+  margin: 25px 40px 50px 100px;
 } 
 }
       
 @media (max-width: 550px) {
 .services h3 {
-  padding: 50px 40px 0 40px;
+  margin: 0 40px 0 40px;
 }
           
 .services .description {
-  padding: 25px 40px 50px 40px;
+  margin: 25px 40px 50px 40px;
 } 
     
 .services .row {
@@ -151,7 +153,12 @@
   font-size: 40px;
   letter-spacing: -1.25px;
   line-height: 40px;
+  margin: 0 10px 0 10px;
 }
+
+.services .description {
+  margin: 20px;
+} 
       
 .services .col {
   min-width: 300px;
