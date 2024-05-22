@@ -219,14 +219,14 @@
   display: block;
   position: fixed;
   top: 3px;
-  left: 1;
+  left: 0;
   z-index: -1;
 }
         
 .logotype {
   animation: lowOpacityFadeIn 1.5s linear 1s forwards;
   font-size: 50px;
-  letter-spacing: -8px;
+  letter-spacing: -9px;
   opacity: 0;
   z-index: 1;
 }
