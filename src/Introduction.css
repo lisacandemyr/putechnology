@@ -2,6 +2,7 @@
 main {
   height: 65vh;
   margin: 65px 120px 0 120px;
+  overflow: hidden;
 }
 
 main .row {

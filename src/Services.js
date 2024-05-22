@@ -116,7 +116,7 @@ supportButtons.forEach(button => {
 return (
     <div className="Services">
       <section className="services" id="services">
-       <h3 className="text-center">“Polyurethane is one of the most energy efficient insulation materials available today.”</h3>
+       <h3 className="text-center">“Polyurethane is one of the most energy efficient insulation materials available.”</h3>
        <p className="description text-center">Polyurethane is a highly versatile material that can be used in many far-reaching applications, including off-site construction, house building, floors, and ceiling cavities in both new and retrofit construction projects. PU Technology works closely with its partners to develop bespoke rigid PU foam solutions. From initial project discussions to delivering the correctly specified materials, we have good experience supplying into SIPs panels, cold store panels, refrigerated displays, marine pipelines, molded rigid foam, and more. No matter the complexity of your project, rigid PU/PIR foam materials sourced from PU Technology are available, with a team of application engineers ready to support you and formulate to your specific requirements.</p>
       <div className="services">
         <div className="row">
