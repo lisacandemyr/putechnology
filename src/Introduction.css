@@ -118,7 +118,7 @@ main {
 }
 
 main .col-lg-7, main .col-lg-5 {
-  z-index: -2;
+  z-index: -1;
 }
 
 main h1 {
