@@ -226,7 +226,7 @@
 .logotype {
   animation: lowOpacityFadeIn 1.5s linear 1s forwards;
   font-size: 50px;
-  letter-spacing: -9px;
+  letter-spacing: -8px;
   opacity: 0;
   z-index: 1;
 }
