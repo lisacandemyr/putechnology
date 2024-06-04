@@ -4,7 +4,7 @@ import "./App.css";
 
 function Equipment() {
   return (
-    <div className="Equipment hidden">
+    <div className="Equipment">
       <section className="equipment" id="equipment">
           <div className="row">
             <button className="col equipment-btn-1 active">SIPs Manufacturing Equipment</button>
@@ -21,6 +21,7 @@ function Equipment() {
           <br />
           SIPs buildings are more energy efficient and quieter. Furthermore, with the right know-how and machinery, their manufacture is more cost-effective than older technology systems. Hence their popularity for both Full Wall, roof panels, Volumetric, and Modular buildings over, for example, timber framing. As well as faster build, they give less air leakage, therefore, fewer drafts, fewer noise penetrations, and significantly lower energy bills and CO2 emissions.
           </p>
+          <br />
          <div className="grid">
           <div className="grid-item-1">
           <h5>SIPs Manufacture</h5>
@@ -138,7 +139,6 @@ function Equipment() {
            <li>○ Chemical systems and facing material supplies</li>
           </ul>
         </div>
-        <div className="prompt text-center">Contact us today on <strong>07841 046596</strong> or email <a href="mailto:mail@putechnology.com"><strong>mail@putechnology.com</strong></a> for further information.</div>
       </section>
     </div>
   );

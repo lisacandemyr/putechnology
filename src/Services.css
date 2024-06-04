@@ -35,7 +35,7 @@
 .services .option {
   border-radius: 5px 5px 50px 50px;
   height: 240px;
-  margin-top: -10px;
+  margin-top: -11px;
   padding: 30px;
 }
   
@@ -68,7 +68,7 @@
   border-radius: 5px;
   color: var(--dark-color);
   font-size: 15px;
-  height: 100%;
+  height: 45px;
   width: 100%;
   letter-spacing: -0.25px;
   padding: 10px 5px;
@@ -79,19 +79,8 @@
   font-weight: 700;
 }
 
-.services .analysis .active, .services .analysis .option {
-  background: linear-gradient(150deg, rgba(86, 118, 253, 0.5), rgba(97, 228, 248, 0.5));
-  backdrop-filter: blur(2px);
-} 
-
-.services .evaluation .active, .services .evaluation .option {
-  background: linear-gradient(150deg, rgba(252, 98, 122, 0.5), rgba(252, 170, 70, 0.5));
-  backdrop-filter: blur(2px);
-} 
-
-.services .support .active, .services .support .option {
-  background: linear-gradient(150deg, rgba(150, 205, 115, 0.5), rgba(248, 253, 101, 0.5));
-  backdrop-filter: blur(2px);
+.services .active, .services .option {
+  background: rgba(171, 214, 238, 0.5);
 } 
 
 .services .active {
