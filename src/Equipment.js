@@ -3,7 +3,7 @@ import "./Equipment.css";
 import "./App.css";
 
 function Equipment() {
-    return (
+  return (
     <div className="Equipment hidden">
       <section className="equipment" id="equipment">
           <div className="row">
@@ -27,8 +27,8 @@ function Equipment() {
           <p>SIPs or Eco panels take the form of a rigid foam insulating core, sandwiched between two structural facings. The insulating core material is polyurethane (PUR), polyisocyanurate (PIR), or polystyrene (PS). Panels with a PUR/PIR core achieve the same U-value over a thinner cross-section than panels with a PS core. In addition, PUR typically transmits about 40% less heat for a given thickness. For example, at a U-value of 0.02 W/m²K, a SIP wall using PUR is about 50mm thinner than one using PS. The difference in internal floor space or plotting efficiency is significant to some clients. Ensure structural integrity with our advanced bonding technology. Our panels are designed to withstand structural loads, with the insulation core auto-adhesively bonded to the OSB facings for improved adhesion. Unlike other solutions that rely on glues used in a secondary process, our panels feature PUR foam that is injected in liquid form and expands to bond directly with the OSB under high pressure. This advanced approach sets us apart and guarantees reliable results.</p>
           </div>
           <div className="grid-item-2">
-          <img src="src/equipment-1-1.png" />
-          <img src="src/equipment-1-2.png" />
+          <img src="src/equipment-1-1.png" alt="" />
+          <img src="src/equipment-1-2.png" alt="" />
           </div>
          </div>
         </div> 
@@ -141,7 +141,7 @@ function Equipment() {
         <div className="prompt text-center">Contact us today on <strong>07841 046596</strong> or email <a href="mailto:mail@putechnology.com"><strong>mail@putechnology.com</strong></a> for further information.</div>
       </section>
     </div>
-    );
+  );
 }
 
 export default Equipment;
