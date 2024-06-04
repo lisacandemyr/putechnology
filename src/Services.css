@@ -8,7 +8,7 @@
   font-weight: 700;
   letter-spacing: -2px;
   line-height: 50px;    
-  padding-top: 75px;
+  padding-top: 50px;
   margin: 0 100px 0 160px;
 }
   
@@ -76,7 +76,7 @@
 }
 
 .services button:hover {
-  font-weight: 700;
+  background: rgba(171, 214, 238, 0.25);
 }
 
 .services .active, .services .option {
