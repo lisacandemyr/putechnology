@@ -7,7 +7,7 @@ import "./App.css";
 
 function Introduction() {
   return (
-    <div className="Introduction">
+    <div className="Introduction hidden">
       <main>
         <div className="row">
           <div className="col-lg-7">

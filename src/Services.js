@@ -20,30 +20,30 @@ function Services() {
       text: "Implementing Factory Production Control (FPC) alongside other techniques for accreditation and quality standard requirements. Proficient in the operation of various equipment types, including single and multi-daylight presses, shuttle presses, vertical presses, rotary moulding turntables and many other types of bespoke equipment."
     },
     "analysis-3": {
-      headline: "Business Strategy Services",
+      headline: "Strategy Services",
       text: "Empowering management teams to capitalise on emerging business prospects through strategic planning and comprehensive feasibility studies. Additionally, supporting sales and marketing teams to expedite market expansion and achieve business objectives efficiently."
     },
     "analysis-4": {
-      headline: "Issue Resolution & Failure Analysis",
+      headline: "Failure Analysis",
       text: "Diagnosing and resolving issues by utilising our combined expertise spanning over a century in polyurethane processing and products across numerous regions worldwide. Our comprehensive failure analysis include evaluations of processing discrepancies and chemical compatibility."
     },
   };
 
   const evaluationContent = {
     "evaluation-1": {
-      headline: "Product & Production Development",
+      headline: "Production Development",
       text: "Leveraging our collective expertise to streamline market entry by covering all the chemical and numerous processing options. We specialise in equipment optimisation, plant enhancements, and delivering cost-effective solutions for seamless product and production development."
     },
     "evaluation-2": {
-      headline: "Advanced Production Optimisation",
+      headline: "Production Optimisation",
       text: "Bringing extensive experience in PU, PUR and PIR technologies, we excel in optimising production processes. Our proficiency extends to utilising high and low-pressure metering equipment, alongside cutting-edge pentane and LBA blowing agent technologies."
     },
     "evaluation-3": {
-      headline: "Intellectual Property Sourcing",
+      headline: "Property Sourcing",
       text: "Providing professional guidance on technology, chemicals, and procurement, we ensure optimal sourcing strategies. Our expertise extends to intellectual property matters, covering diverse PU, PUR, PIR and hybrid approaches with partner patent attorneys."
     },
     "evaluation-4": {
-      headline: "Valuation & Funding Consultation",
+      headline: "Funding Consultation",
       text: "Offering independent and unbiased advice in collaboration with your financial team to navigate valuation reporting and explore funding options, ensuring informed decision-making and strategic financial planning."
     },
   };
@@ -54,11 +54,11 @@ function Services() {
       text: "Offering comprehensive consultation on various PU, PUR, PIR and hybrid approaches, independent of supplier preferences. From continuous metal-faced panels to discontinuous panel production, we provide insights and expertise for prototype samples and beyond."
     },
     "support-2": {
-      headline: "Global Assignment Management",
+      headline: "Global Management",
       text: "Facilitating assignments worldwide, including remote work when suitable for cost efficiency and logistical reasons."
     },
     "support-3": {
-      headline: "Factory Design Optimisation",
+      headline: "Design Optimisation",
       text: "Specialising in polyurethane processing equipment, our technical specialists excel in factory design and production layout optimisation, including mechanical handling solutions."
     },
     "support-4": {

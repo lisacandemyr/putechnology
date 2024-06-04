@@ -6,12 +6,13 @@
   --font-putechnology: "Nova Round", system-ui;
   --background-color: rgb(255, 255, 255);
   --light-color: rgb(227, 244, 247);
-  --border-color: rgb(219, 219, 219);
+  --border-color: #f0f0f0;
   --primary-color: rgb(108, 176, 227);
   --dark-color: rgb(44, 44, 44);
 }
 
 body {
+  background: whitesmoke;
   color: var(--dark-color);
   font-family: var(--font-family-head);
 }
