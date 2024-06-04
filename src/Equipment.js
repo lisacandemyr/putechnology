@@ -1,33 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Equipment.css";
 import "./App.css";
 
 function Equipment() {
-  const [activeEquipmentButton, setActiveEquipmentButton] = useState(".equipment-btn-1");
-  const [activeEquipment, setActiveEquipment] = useState(".equipment-1");
-
-  const equipmentButtons = document.querySelectorAll(".equipment-btn-1, .equipment-btn-2, .equipment-btn-3, .equipment-btn-4, .equipment-btn-5");
-    
-    function displaySelectedEquipment(event) {
-      event.preventDefault();
-      const equipmentButton = event.target;
-      const targetEquipment = document.querySelector(`.${equipmentButton.classList[1].replace('equipment-btn', 'equipment')}`);
-    
-      activeEquipmentButton.classList.remove("active");
-      activeEquipment.classList.add("hidden");
-    
-      equipmentButton.classList.add("active");
-      targetEquipment.classList.remove("hidden");
-    
-      activeEquipmentButton = equipmentButton;
-      activeEquipment = targetEquipment;
-    }
-    
-    equipmentButtons.forEach(button => {
-      button.addEventListener("click", displaySelectedEquipment);
-    });
-
-
     return (
     <div className="Equipment hidden">
       <section className="equipment" id="equipment">
