@@ -32,7 +32,6 @@
   border-radius: 15px;
   min-width: 400px;
   padding: 0;
-  transition: all 300ms ease-in-out;
 }
   
 /* Manual Colour Change */
@@ -58,7 +57,7 @@
 .services h4 {
   font-size: 40px;
   font-weight: 700;
-  letter-spacing: -1.25px;
+  letter-spacing: -1.5px;
   line-height: 40px;
 }
   
@@ -72,7 +71,7 @@
   border: none;
   color: var(--dark-color);
   font-size: 16px;
-  letter-spacing: 0.15px;
+  letter-spacing: -0.25px;
   line-height: 22px;
   transition: all 300ms ease-in-out;
 }
@@ -88,13 +87,13 @@
 .services h5 {
   font-size: 16px;
   font-weight: 900;
-  letter-spacing: 0.15px;
+  letter-spacing: -0.25px;
   line-height: 22px;
 }
   
 .services p {
   font-size: 16px;
-  letter-spacing: 0.15px;
+  letter-spacing: -0.25px;
   line-height: 22px; 
 }
 

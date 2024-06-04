@@ -1,6 +1,7 @@
 import Navbar from "./Navbar.js";
 import Introduction from "./Introduction.js";
 import Services from "./Services.js";
+import Equipment from "./Equipment.js";
 import "./App.css";
 
 function App() {
@@ -11,8 +12,20 @@ function App() {
       <Navbar />
       <Introduction />
       <Services />
+      <Equipment />
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
