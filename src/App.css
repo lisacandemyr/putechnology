@@ -180,7 +180,7 @@ opacity: 1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-color);
+  background: var(--dark-color);
   background-clip: content-box;
   border-radius: 20px;
   border: 6px solid transparent;

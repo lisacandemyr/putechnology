@@ -34,7 +34,32 @@ main h2 span {
   letter-spacing: -16px;
   margin-right: 20px;
 }
-  
+
+main .house {
+  position: absolute;
+  top: 175px;
+  transform: rotate(20deg);
+  width: 350px;
+  z-index: 1;
+}
+
+main .puzzle {
+  position: relative;
+  top: -50px;
+  transform: rotate(-10deg);
+  width: 100px;
+  z-index: 2;
+}
+
+main .gear {
+  position: relative;
+  top: 100px;
+  left: 165px;
+  transform: rotate(20deg);
+  width: 200px;
+  z-index: 2;
+}
+
 main img {
   width: 450px;
 }

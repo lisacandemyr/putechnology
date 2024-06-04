@@ -52,6 +52,7 @@
 .services img {
   align-items: center;
   height: 150px;
+  z-index: 9999;
 }
   
 .services h4 {
