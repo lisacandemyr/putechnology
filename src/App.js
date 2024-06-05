@@ -4,6 +4,7 @@ import Services from "./Services.js";
 import Equipment from "./Equipment.js";
 import Applications from "./Applications.js";
 import About from "./About.js";
+import Footer from "./Footer.js";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Equipment />
       <Applications />
       <About />
+      <Footer />
     </div>
   );
 }

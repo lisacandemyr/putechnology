@@ -3,14 +3,14 @@ import "./About.css";
 function About() {
   return (
     <div className="About">
- <section class="about" id="about">
-    <h3 class="gradient-text text-center">About PU Technology</h3>
-      <div class="row">
-        <div class="card-1 col text-center">
-          <div class="card-top">
+ <section className="about" id="about">
+    <h3 className="gradient-text text-center">About PU Technology</h3>
+      <div className="row">
+        <div className="card-1 col text-center">
+          <div className="card-top">
            <img src="src/about-1.png" alt="" />
           </div>
-          <div class="card-body">
+          <div className="card-body">
            <p><em>We provide professional, unbiased polyurethane machine advice, with over 100 years of combined experience in polyurethane processing and products across the world.
            <br />
            <br />
@@ -20,22 +20,22 @@ function About() {
            Furthermore, our chemical expertise covers the full range of developments, including many at the frontiers of the technology.</em></p>
           </div>
         </div>
-        <div class="card-2 col text-center">
-          <div class="card-top">
+        <div className="card-2 col text-center">
+          <div className="card-top">
            <img src="src/about-2.png" alt="" />
           </div>
-          <div class="card-body">
+          <div className="card-body">
            <p><em>Our technical specialists have product experience, including prototype samples; bringing new products rapidly to market; and growing output by orders of magnitude, in addition to expanding production geographically by rolling out to multi-site operations.
            <br />
            <br />
            Our expertise includes chemical selection, production process definition, also new product development in existing and emerging markets. Addressing technical product aspects including fire resistance, structural performance, thermal optimisation, acoustic attenuation and also total life environmental aspects.</em></p>
           </div>
         </div>
-        <div class="card-3 col text-center">
-          <div class="card-top">
+        <div className="card-3 col text-center">
+          <div className="card-top">
            <img src="src/about-3.png" alt="" />
           </div>
-          <div class="card-body">
+          <div className="card-body">
            <p><em>Our experience and market knowledge ranges across polyurethane insulation applications including construction, transport, cold storage, insulated pipelines, domestic refrigeration in addition to deep sea buoyancy.
            <br />
            <br />
