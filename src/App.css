@@ -191,3 +191,9 @@ opacity: 1;
 ::-webkit-scrollbar-thumb:hover {
   cursor: pointer;
 }
+
+@media (max-width: 800px) { 
+.grain::before {
+  background-size: 140px;
+}
+}
