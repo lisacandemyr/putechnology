@@ -24,17 +24,11 @@ function Navbar() {
   return (
     <div className="Navbar">
       <nav className="navbar" id="home">
-        <div className="btn-container">
+        <div className="nav float-down">
+          <div className="logo">Putechnology</div>
           <button className={`menu-btn ${isMenuOpen ? 'menu-btn-clicked' : 'menu-btn-unselected'}`} id="menu-btn" onClick={showOffCanvasMenu}>
             <i className="fa-regular fa-bars-staggered"></i>
           </button>
-        </div>
-        <span className="logo-bg-2"></span>
-        <div className="logo">
-        <span className="logo-bg"></span>
-          <span className="logotype">pu</span>
-          <span className="logo-text">technology</span>
-          <span className="logo-description">experts in polyurethanes</span>
         </div>
         <div className={`offcanvas-menu ${isMenuOpen ? 'show-offcanvas-menu' : 'close-offcanvas-menu'}`} id="offcanvas-menu">
           <ul className="navbar-nav">

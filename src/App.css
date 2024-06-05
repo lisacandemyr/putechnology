@@ -1,20 +1,20 @@
 :root {
-  --font-family-head: "Red Hat Display", sans-serif;
-  --font-family-text: "Red Hat Text", sans-serif;
+  --font-family-head: "Unbounded", sans-serif;
+  --font-family-text: "Red Hat Display", sans-serif;
   --font-autorim: "Quicksand", sans-serif;
   --font-krauss-maffei: "Roboto", sans-serif;
-  --font-putechnology: "Nova Round", system-ui;
-  --background-color: rgb(255, 255, 255);
+  --background-color: rgb(255, 253, 241);
   --light-color: rgb(227, 244, 247);
   --border-color: #f0f0f0;
   --primary-color: rgb(108, 176, 227);
-  --dark-color: rgb(44, 44, 44);
+  --dark-color: rgb(86, 132, 220);
+  --box-shadow: 0 0 5px rgba(145, 145, 145, 0.1);
 }
 
 body {
-  background: whitesmoke;
+  background: var(--background-color);
   color: var(--dark-color);
-  font-family: var(--font-family-head);
+  font-family: var(--font-family-text);
 }
 
 .hidden {
@@ -175,9 +175,9 @@ opacity: 1;
 ::-webkit-scrollbar {
   width: 20px;
 }
-
+/* Manual Colour Change*/
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: rgb(249, 247, 236);
 }
 
 ::-webkit-scrollbar-thumb {

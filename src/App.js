@@ -1,5 +1,5 @@
 import Navbar from "./Navbar.js";
-import Introduction from "./Introduction.js";
+import Introduction from "./Home.js";
 import Services from "./Services.js";
 import Equipment from "./Equipment.js";
 import Applications from "./Applications.js";
