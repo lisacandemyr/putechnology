@@ -1,0 +1,82 @@
+.Applications {
+  width: 96.5%;
+  margin: 0 auto;
+}
+  
+.applications {
+  margin: 0 20px 0 80px;
+  padding: 50px 0;
+}
+  
+.applications h4 {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 50px;
+}
+  
+.applications .description {
+  font-size: 18px;
+  letter-spacing: 0.25px;
+  line-height: 24px;
+  margin: 15px 75px 25px 75px;
+}
+  
+.applications .grid-item {
+  background: rgba(247, 164, 80, 0.75);
+  border-radius: 15px;
+  height: 300px;
+  padding: 30px;
+}
+
+.applications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.applications li {
+  font-size: 15px;
+  letter-spacing: -0.25px;
+}
+
+.slick-slide {
+  padding: 20px;
+  transition: opacity 300ms ease-in-out;
+}
+  
+.slick-slide.slick-active {
+  opacity: 1;
+}
+  
+.slick-slide:not(.slick-active) {
+  opacity: 0.0;
+}
+
+@media (max-width: 800px) {  
+.Applications {
+  width: 94%;
+}
+
+.applications .description {
+  margin: 15px 8px 25px 8px;
+}
+}
+      
+@media (max-width: 550px) {
+.Applications {
+  width: 80%;
+}
+
+.applications {
+  margin: 0;
+}
+
+.applications h4 {
+  margin: 0 10px 0 10px;
+}
+
+.applications .description {
+  margin: 25px 20px 25px 20px;
+}
+}
+    
