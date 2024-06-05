@@ -3,6 +3,7 @@ import Introduction from "./Introduction.js";
 import Services from "./Services.js";
 import Equipment from "./Equipment.js";
 import Applications from "./Applications.js";
+import About from "./About.js";
 import "./App.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Services />
       <Equipment />
       <Applications />
+      <About />
     </div>
   );
 }
