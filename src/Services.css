@@ -1,54 +1,51 @@
 .services {
+  background: var(--dark-color);
+  box-sizing: border-box;
   overflow: hidden;
-  z-index: -2;
+  padding: 75px 0 45px 0;
+  z-index: 9999;
 }
 
 .services h3 {
-  font-size: 50px;
+  color: var(--background-color);
+  font-size: 40px;
   font-weight: 700;
   letter-spacing: -2px;
-  line-height: 50px;    
-  padding-top: 50px;
-  margin: 0 100px 0 160px;
+  line-height: 40px;
+  margin: 0 50px;    
 }
   
 .services .description {
-    font-size: 18px;
-    letter-spacing: 0.25px;
-    line-height: 24px;
-    margin: 15px 100px 25px 160px;
+  color: var(--background-color);
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.25px;
+  line-height: 24px;
+  margin: 15px 80px 0 80px;
 }
   
 .services .row {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin: 20px 20px 20px 80px;
-  padding-bottom: 75px; 
+  margin: -20px 20px 0 20px;
 }
   
 .services .col {
   min-width: 400px;
-  z-index: 0;
-}
-  
-.services .option {
-  border-radius: 5px 5px 50px 50px;
-  height: 240px;
-  margin-top: -11px;
-  padding: 30px;
 }
   
 .services img {
   align-items: center;
-  height: 150px;
-  z-index: 9999;
+  height: 125px;
+  margin-bottom: 20px;
 }
   
 .services h4 {
+  color: var(--background-color);
   font-size: 40px;
   font-weight: 700;
-  letter-spacing: -1.5px;
+  letter-spacing: -2px;
   line-height: 40px;
   margin-bottom: 25px;
 }
@@ -63,142 +60,136 @@
 }
 
 .services button {
-  background: rgba(168, 168, 168, 0.1);
+  background: rgba(255, 253, 241, 0.25);
   border: none;
   border-radius: 5px;
-  color: var(--dark-color);
+  color: var(--background-color);
   font-size: 15px;
+  font-weight: 100;
   height: 45px;
   width: 100%;
-  letter-spacing: -0.25px;
   padding: 10px 5px;
   transition: all 300ms ease-in-out;
 }
 
 .services button:hover {
-  background: rgba(171, 214, 238, 0.25);
+  background: rgba(255, 253, 241, 0.5);
+  color: var(--background-color);
 }
-
-.services .active, .services .option {
-  background: rgba(171, 214, 238, 0.5);
-} 
 
 .services .active {
-  font-weight: 700;
+  background: rgba(255, 253, 241, 0.75);
+  backdrop-filter: blur(5px);
+  color: var(--dark-color);
+  font-weight: 400;
+} 
+
+.services .option {
+  background: rgba(255, 253, 241, 0.75);
+  backdrop-filter: blur(5px);
+  border-radius: 5px 5px 25px 25px;
+  height: 230px;
+  margin-top: -12px;
+  padding: 30px;
 }
-  
+
 .services h5 {
   font-size: 15px;
-  font-weight: 700;
-  letter-spacing: -0.25px;
+  font-weight: 400;
 }
   
 .services p {
   font-size: 15px;
-  letter-spacing: -0.25px;
+  font-weight: 300;
 }
 
-@media (max-width: 1340px) {
-.services .option {
-  height: 200px;
-}
-}
-
-@media (max-width: 1300px) {
-.services .option {
-  height: 200px;
-}
-}
-
-@media (max-width: 1200px) {
-.services h3 {
-  padding-top: 50px;
-  margin: 0 80px 0 140px;
-}
-
-.services .description {
-  margin: 15px 80px 25px 140px;
-}
-}
-
-@media (max-width: 1160px) {
-.services .option {
-  height: 220px;
-}
-}
-
-@media (max-width: 1022px) {
+@media (max-width: 1467.5px) {
 .services .option {
   height: 240px;
 }
 }
 
-@media (max-width: 991.5px) {
-.services h3 {
-  margin: 0 70px 0 130px;
-}
-
-.services .description {
-  margin: 15px 70px 25px 130px;
-}
-}
-
-@media (max-width: 920px) {
-.services h3 {
-  margin: 0 60px 0 120px;
-}
-      
-.services .description {
-  margin: 25px 60px 50px 120px;
-}  
-
+@media (max-width: 1298px) {
 .services .option {
-  height: 180px;
+  height: 260px;
 }
-}
-      
-@media (max-width: 800px) {  
-.services h3 {
-  margin: 0 40px 0 100px;
-}
-    
-.services .description {
-  margin: 25px 40px 50px 100px;
-} 
 }
 
-@media (max-width: 715px) {  
+@media (max-width: 1279.5px) {
 .services .option {
   height: 200px;
 }
 }
 
-@media (max-width: 620px) {  
+@media (max-width: 1129px) {
+.services .option {
+  height: 220px;
+}
+}
+
+@media (max-width: 984px) {
+.services .option {
+  height: 240px;
+}
+}
+
+@media (max-width: 872px) {
+.services .option {
+  height: 260px;
+}
+}
+
+@media (max-width: 859.5px) {
+.services h3 {
+  margin: 0 35px 0 35px;
+}
+              
+.services .description {
+  margin: 15px 35px 0 35px;
+} 
+
+.services .row {
+  margin: -40px 20px 0 20px;
+}
+
+.services .col {
+  min-width: 400px;
+  margin-top: 20px;
+}
+
+.services .option {
+  height: 180px;
+}
+}
+
+@media (max-width: 672px) {  
+.services h3 {
+  margin: 0 25px 0 25px;
+}
+            
+.services .description {
+  margin: 15px 25px 0 25px;
+} 
+
+
+.services .option {
+  height: 200px;
+}
+}
+
+@media (max-width: 575px) {  
 .services .option {
   height: 220px;
 }
 }
       
-@media (max-width: 550px) {
-.services h3 {
-  margin: 0 40px 0 40px;
-}
-          
-.services .description {
-  margin: 25px 40px 50px 40px;
-} 
-    
-.services .row {
-  margin: 0 20px 50px 20px;
-}
-
+@media (max-width: 550px) {  
 .services .option {
-  height: 220px;
   padding: 30px 20px;
 }
 }
 
-@media (max-width: 471px) {  
+@media (max-width: 482.5px) {  
 .services .option {
   height: 240px;
 }
@@ -213,31 +204,8 @@
 @media (max-width: 450px) {     
 .services h3 {
   font-size: 35px;
-  letter-spacing: -1.25px;
-  line-height: 40px;
-  margin: 0 20px 0 20px;
-}
-
-.services .description {
-  font-size: 16px;
-  letter-spacing: 0px;
-  line-height: 24px;
-  margin: 10px 20px 20px 20px;
-}
-
-.services button {
-  font-size: 15px;
-  letter-spacing: 0px;
-}
-
-.services h5 {
-  font-size: 15px;
-  letter-spacing: 0px;
-}
-  
-.services p {
-  font-size: 15px;
-  letter-spacing: 0px;
+  letter-spacing: -1.5px;
+  line-height: 37px;
 }
      
 .services .col {
@@ -252,13 +220,13 @@
 }
 }
 
-@media (max-width: 375px) {  
+@media (max-width: 371.5px) {  
 .services .option {
   height: 280px;
 }
 }
     
-@media (max-width: 347px) {  
+@media (max-width: 343.5px) {  
 .services .option {
   height: 300px;
 }

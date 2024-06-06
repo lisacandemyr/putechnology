@@ -15,7 +15,7 @@ function Equipment() {
   };
 
   return (
-    <div className="Equipment">
+    <div className="Equipment hidden">
       <section className="equipment" id="equipment">
         <div className="row">
             <button className={`col equipment-btn-1 ${activeEquipment === 1 ? 'active' : ''}`}

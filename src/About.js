@@ -2,7 +2,7 @@ import "./About.css";
 
 function About() {
   return (
-    <div className="About">
+    <div className="About hidden">
  <section className="about" id="about">
     <h3 className="gradient-text text-center">About PU Technology</h3>
       <div className="row">

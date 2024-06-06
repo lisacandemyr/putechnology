@@ -3,7 +3,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div className="Footer">
+    <div className="Footer hidden">
  <footer className="contact" id="contact">
     <div className="grid">
       <div className="grid-item contact-section">
