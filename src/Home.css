@@ -1,16 +1,22 @@
 main {
   box-sizing: border-box;
-  margin: 135px 135px 205px 135px;
+  margin: 150px 135px 210px 135px;
   overflow: hidden;
   padding: 0;
 }
  
 main h1 {
-  font-family: var(--font-family-text);
+  font-family: var(--font-family-sub-head);
   font-size: 70px;
-  font-weight: 600;
-  letter-spacing: -3px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  line-height: 60px;
+  margin-left: 2.5px;
   text-transform: lowercase;
+}
+
+main h1 .space {
+  letter-spacing: -20px;
 }
 
 main h2 {
@@ -18,18 +24,21 @@ main h2 {
   font-size: 90px;
   font-weight: 800;
   letter-spacing: -5px;
-  margin-top: -40px;
+  margin: -40px 0 0 -3px;
   text-transform: uppercase;
 }
 
 main p {
-  font-family: var(--font-family-text);
+  font-family: var(--font-family-paragraph);
   font-size: 30px;
-  font-weight: 300;
-  letter-spacing: 1px;
+  font-weight: 100;
   line-height: 45px;
-  margin: -33px 0 0 291px;
+  margin: -25px 0 0 329px;
   text-transform: lowercase;
+}
+
+.responsive-show {
+  display: none;
 }
 
 @media (max-width: 1180px) {    
@@ -46,18 +55,22 @@ main {
 main h1 {
   font-size: 60px;
 }
+
+main h1 .space {
+  letter-spacing: -15px;
+}
     
 main h2 {
   font-size: 80px;
   letter-spacing: -4px;
-  margin-top: -36px;
+  margin-top: -39px;
 }
     
 main p {
   font-size: 27px;
   letter-spacing: 1.65px;
   line-height: 25px;
-  margin: -22px 0 0 226px;
+  margin: -14px 0 0 220px;
 }
 }
       
@@ -68,11 +81,11 @@ main {
 }
        
 main h1 {
-  margin-right: 642px;
+  margin-right: 665px;
 }
       
 main p {
-  margin: -22px 0 0 204px;
+  margin: -14px 0 0 199px;
 }
 }
 
@@ -82,22 +95,20 @@ main {
 }
 
 main h1 {
-  font-size: 50px;
-  letter-spacing: -2px;
   margin-right: 572px;
 }
         
 main h2 {
   font-size: 70px;
   letter-spacing: -3px;
-  margin-top: -31px;
+  margin-top: -37px;
 }
         
 main p {
   font-size: 23px;
   letter-spacing: 1.5px;
   line-height: 20px;
-  margin: -19px 0 0 192px;
+  margin: -12px 0 0 188px;
 }
 }
 
@@ -107,40 +118,36 @@ main {
 }
 
 main h1 {
-  font-size: 40px;
-  letter-spacing: -1.5px;
-  margin-right: 498px;
+  margin-right: 473px;
 }
           
 main h2 {
   font-size: 60px;
   letter-spacing: -2.5px;
-  margin-top: -28px;
+  margin-top: -35px;
 }
           
 main p {
   font-size: 20px;
   letter-spacing: 1.25px;
-  margin: -19px 0 0 160px;
+  margin: -11px 0 0 158px;
 }
 }
     
 @media (max-width: 650px) {
 main h1 {
-  font-size: 60px;
-  font-weight: 600;
-  letter-spacing: -3px;
-  margin-right: 0;
+  font-size: 80px;
+  margin: 0;
 }
               
 main h2 {
   font-size: 50px;
   letter-spacing: -2px;
-  margin-top: -28px;
+  margin: -23px 0 0 0;
 }
               
 main p {
-  margin: -15px 0 0 0;
+  margin: -6px 0 0 0;
 }
 }
 
@@ -150,21 +157,19 @@ main {
 }
 
 main h1 {
-  font-size: 50px;
-  letter-spacing: -2px;
+  font-size: 70px;
+  letter-spacing: -1px;
 }
                 
 main h2 {
   font-size: 40px;
   letter-spacing: -1.5px;
-  margin-top: -24px;
 }
                 
 main p {
   font-size: 18px;
-  letter-spacing: 1.25px;
+  letter-spacing: 1px;
   line-height: 18px;
-  margin: -13px 0 0 0;
 }
 }
       
@@ -172,19 +177,39 @@ main p {
 main {
   margin: 190px auto 230px auto;
 }
+
+main h1 {
+  font-size: 60px;
+  letter-spacing: -1px;
+}
                  
 main h2 {
-  font-size: 32px;
+  font-size: 35px;
   letter-spacing: -0.75px;
-  margin-top: -24px;
+  margin-top: -22px;
 }
                   
 main p {
   font-size: 26px;
-  font-style: italic;
-  letter-spacing: 1.60px;
+  letter-spacing: 1px;
   line-height: 24px;
-  margin: -10px 25px 0 25px;
+  margin: -5px 0 0 0;
+}
+
+main .responsive-show {
+  display: inline-block;
+}
+
+main .responsive-hide {
+  display: none;
+}
+}
+
+@media (max-width: 400px) { 
+main h2 {
+  font-size: 30px;
+  letter-spacing: -0.5px;
+  margin-top: -21px;
 }
 }
     
@@ -194,20 +219,20 @@ main {
 }
     
 main h1 {
-  font-size: 35px;
-  letter-spacing: -0.75px;
+  font-size: 50px;
+  letter-spacing: -0.5px;
 }
 
 main h2 {
   font-size: 27px;
   letter-spacing: -0.25px;
-  margin-top: -17px;
+  margin-top: -23px;
 }
                     
 main p {
   font-size: 20px;
   letter-spacing: 1.25px;
   line-height: 17.5px;
-  margin: -11px 25px 0 25px;
+  margin: -5px 25px 0 25px;
 }
 }

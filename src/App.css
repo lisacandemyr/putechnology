@@ -1,6 +1,7 @@
 :root {
   --font-family-head: "Unbounded", sans-serif;
-  --font-family-text: "Red Hat Display", sans-serif;
+  --font-family-sub-head: "La Belle Aurore", cursive;
+  --font-family-paragraph: "Archivo", sans-serif;
   --font-autorim: "Quicksand", sans-serif;
   --font-krauss-maffei: "Roboto", sans-serif;
   --background-color: rgb(255, 253, 241);
