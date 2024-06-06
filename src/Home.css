@@ -175,7 +175,7 @@ main p {
       
 @media (max-width: 450px) { 
 main {
-  margin: 190px auto 230px auto;
+  margin: 195px auto 230px auto;
 }
 
 main h1 {
@@ -193,7 +193,8 @@ main p {
   font-size: 26px;
   letter-spacing: 1px;
   line-height: 24px;
-  margin: -5px 0 0 0;
+  margin: -4px 0 0 0;
+  padding-bottom: 2px;
 }
 
 main .responsive-show {
