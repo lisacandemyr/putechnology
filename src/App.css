@@ -1,13 +1,12 @@
 :root {
   --font-family-head: "Unbounded", sans-serif;
-  --font-family-sub-head: "La Belle Aurore", cursive;
   --font-family-paragraph: "Archivo", sans-serif;
   --font-autorim: "Quicksand", sans-serif;
   --font-krauss-maffei: "Roboto", sans-serif;
-  --background-color: #fffdf1;
+  --background-color: rgb(255, 253, 241);
   --light-color: rgb(227, 244, 247);
   --border-color: #f0f0f0;
-  --dark-color: #5684dc;
+  --dark-color: rgb(73, 73, 73);
   --box-shadow: 0 0 5px rgba(145, 145, 145, 0.1);
 }
 
@@ -30,11 +29,11 @@ body {
 }
 
 .float-down {
-  animation: floatDown 2.5s;
+  animation: floatDown 2s;
 }
 
 .float-up {
-animation: floatUp 2.5s;
+  animation: floatUp 2s;
 }
 
 @keyframes fadeIn {
@@ -93,9 +92,11 @@ opacity: 1;
 
 @keyframes floatDown {
 0% {
+  opacity: 0;
   transform: translateY(-100%);
 }
 100% {
+  opacity: 1;
   transform: translateY(0%);
 }
 }

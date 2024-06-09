@@ -24,9 +24,9 @@ function Navbar() {
   return (
     <div className="Navbar">
       <nav className="navbar" id="home">
-        <div className="nav float-down">
-          <div className="logo">Putechnology</div>
-          <button className={`menu-btn ${isMenuOpen ? 'menu-btn-clicked' : 'menu-btn-unselected'}`} id="menu-btn" onClick={showOffCanvasMenu}>
+        <div className="nav">
+          <div className="logo float-down">Putechnology</div>
+          <button className={`menu-btn float-down ${isMenuOpen ? 'menu-btn-clicked' : 'menu-btn-unselected'}`} id="menu-btn" onClick={showOffCanvasMenu}>
             <i className="fa-regular fa-bars-staggered"></i>
           </button>
         </div>

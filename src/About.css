@@ -1,59 +1,111 @@
 .about {
-  margin: 50px 35px 50px 95px;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 50px 20px;
 }
   
 .about h3 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
-  letter-spacing: -2px;
-  line-height: 50px;    
-}
-  
-.about .row {
-  display: flex;
-  gap: 40px;
-  margin: 25px 0;
-}
-  
-.about .col {
-  background: rgba(171, 214, 238, 0.5);
-  border-radius: 5px 5px 50px 50px;
-  min-width: 400px;
-  padding: 0;
-}
-  
-.about p {
-  font-size: 15px;
-  letter-spacing: -0.25px; 
-}
-  
-.about .card-top, .about .card-top, .about .card-top {
-  height: 200px;
-}
-  
-.about .card-body {
-  padding: 25px;
-} 
-    
-@media (max-width: 991.5px) {
-.about .row {
-  gap: 20px;
-}
-  
-.about .col {
-  border-radius: 5px;
-}
+  letter-spacing: -1.5px;
+  line-height: 40px; 
+  margin: 0;   
 }
 
-@media (max-width: 550px) {
-.about {
-  margin: 50px 20px 50px 20px;
+.about .description {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.25px;
+  line-height: 22px;
+  padding: 15px 40px 0 20px;
+} 
+
+.about .grid {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+  
+.about .grid-item-2 h4 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 30px; 
+  margin: 25px 0 15px 0; 
+}
+  
+.about .autorim-head {
+  font-family: var(--font-autorim);
+  font-size: 34.5px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+  
+.about .autorim-text {
+  font-family: var(--font-family-text);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  position: relative;
+  top: -15px;
+}
+  
+.about .krauss-maffei-head {
+  font-family: var(--font-krauss-maffei);
+  font-size: 23px;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-top: -10px;
+}
+  
+.about .krauss-maffei-text {
+  font-family: var(--font-krauss-maffei);
+  font-size: 11px;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+  margin-top: -10px;
+}
+
+.about .autorim a, .about .krauss-maffei a {
+  color: var(--dark-color);
+  text-decoration: none;
+}
+  
+.about .autorim, .about .krauss-maffei {
+  transition: all 300ms ease-in-out;
+}
+  
+.about .autorim:hover, .about .krauss-maffei:hover {
+  transform: translateX(1%);
+}
+    
+@media (max-width: 850px) {
+.about .description {
+  padding: 15px 20px 0 20px;
+} 
+
+.about .grid {
+  grid-template-columns: 1fr;
 }
 }
 
 @media (max-width: 450px) {
-.about .col {
-  min-width: 300px;
-  padding: 0;
+.about h3 {
+  font-size: 35px;
+  letter-spacing: -1.5px;
+  line-height: 37px;
+}  
+}
+
+@media (max-width: 400px) {  
+.about .description {
+  padding: 15px 0 0 0;
+}
+
+.about .grid-item-2 h4 {
+  font-size: 28px;
+  letter-spacing: -0.75px;
 }
 }

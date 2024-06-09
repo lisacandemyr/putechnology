@@ -1,82 +1,178 @@
-.Applications {
-  width: 96.5%;
-  margin: 0 auto;
-}
-  
 .applications {
-  margin: 0 20px 0 80px;
-  padding: 50px 0;
+  background: var(--dark-color);
+  box-sizing: border-box;
+  padding: 50px 0 0 0;
 }
   
 .applications h4 {
-  font-size: 50px;
+  color: var(--background-color);
+  font-size: 40px;
   font-weight: 700;
-  letter-spacing: -2px;
-  line-height: 50px;
+  letter-spacing: -1.5px;
+  line-height: 40px; 
+  margin: 0; 
 }
   
 .applications .description {
+  color: var(--background-color);
   font-size: 18px;
+  font-weight: 200;
   letter-spacing: 0.25px;
-  line-height: 24px;
-  margin: 15px 75px 25px 75px;
+  line-height: 22px;
+  padding: 15px 80px 0 80px;
+  margin: 0;
+}
+
+.applications .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-row-gap: 20px;
+  padding: 0 20px;
 }
   
 .applications .grid-item {
-  background: rgba(247, 164, 80, 0.75);
-  border-radius: 15px;
   height: 300px;
-  padding: 30px;
+  position: relative;
+}
+
+.applications .grid-item::before {
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  border-radius: 25px;
+  color: var(--background-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  transition: all 300ms ease-in-out;
+}
+
+.applications .grid-item-1::before {
+  background-image: url(img/application-1.png);
+  content: "";
+  padding-top: 135px;
+}
+
+.applications .grid-item-2::before {
+  background-image: url(img/application-2.png);
+  content: "";
+  padding-top: 135px;
+}
+
+.applications .grid-item-3::before {
+  background-image: url(img/application-3.png);
+  content: "";
+  padding-top: 135px;
+}
+
+.applications .grid-item-4::before {
+  background-image: url(img/application-4.png);
+  content: "";
+  padding-top: 135px;
+}
+
+.applications .grid-item:hover::before {
+  content: "";
+  opacity: 0.25;
 }
 
 .applications ul {
   list-style: none;
+  opacity: 0;
   padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-18%, -50%);
+  transition: opacity 300ms ease-in-out;
+}
+
+.applications .grid-item:hover ul {
+  opacity: 1;
 }
 
 .applications li {
-  font-size: 15px;
-  letter-spacing: -0.25px;
+  color: var(--background-color);
+  font-size: 13px;
 }
 
-.slick-slide {
-  padding: 20px;
-  transition: opacity 300ms ease-in-out;
-}
-  
-.slick-slide.slick-active {
-  opacity: 1;
-}
-  
-.slick-slide:not(.slick-active) {
-  opacity: 0.0;
-}
-
-@media (max-width: 800px) {  
-.Applications {
-  width: 94%;
-}
-
-.applications .description {
-  margin: 15px 8px 25px 8px;
-}
-}
-      
-@media (max-width: 550px) {
-.Applications {
-  width: 80%;
-}
-
-.applications {
-  margin: 0;
+@media (max-width: 850px) {  
+.applications .grid {
+  grid-template-columns: 1fr 1fr;
 }
 
 .applications h4 {
-  margin: 0 10px 0 10px;
+  padding: 0 25px;  
+}
+  
+.applications .description {
+  padding: 15px 40px 0 40px;
+}
+}   
+
+@media (max-width: 700px) {  
+.applications .grid-item {
+  height: 250px;
+}
 }
 
+@media (max-width: 600px) {  
+.applications .grid-item::before {
+  background-size: 60%;
+}
+}
+
+@media (max-width: 500px) {  
+.applications .grid-item::before {
+  background-size: 70%;
+}
+}
+
+@media (max-width: 450px) {     
+.applications h4 {
+  font-size: 35px;
+  letter-spacing: -1.5px;
+  line-height: 37px;
+}  
+
+.applications .grid {
+  padding: 20px 20px 40px 20px;
+}
+
+.applications .grid-item {
+  height: 200px;
+}
+
+.applications .grid-item::before {
+  background-size: 80%;
+}
+}
+
+@media (max-width: 399.5px) {  
 .applications .description {
-  margin: 25px 20px 25px 20px;
+  padding: 15px 20px 0 20px;
 }
 }
-    
+
+@media (max-width: 350px) {
+.applications h4 {
+  font-size: 30px;
+  letter-spacing: -1.25px;
+  line-height: 32px;
+} 
+
+.applications .grid {
+  padding: 20px;
+}
+
+.applications .grid-item {
+  height: 150px;
+}
+}

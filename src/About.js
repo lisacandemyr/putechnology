@@ -2,48 +2,30 @@ import "./About.css";
 
 function About() {
   return (
-    <div className="About hidden">
- <section className="about" id="about">
-    <h3 className="gradient-text text-center">About PU Technology</h3>
-      <div className="row">
-        <div className="card-1 col text-center">
-          <div className="card-top">
-           <img src="src/about-1.png" alt="" />
+    <div className="About">
+      <section className="about" id="about">
+        <div className="grid">
+          <div className="grid-item-1">
+            <h3 className="text-center">About Us</h3>
+            <p className="description text-center">We offer professional, unbiased advice on polyurethane machines, backed by over 100 years of combined global experience in PU processing and products. Our engineering expertise spans across PU, PUR, PIR and hybrid techniques, including continuous and discontinuous panel production. Our chemical knowledge covers cutting-edge developments. We excel in product development, rapid market introduction and large-scale production expansion. Our services include chemical selection, process definition and new product development, addressing fire resistance, structural performance, thermal optimisation and environmental impact. We also specialise in technologies like pentane, LBA, low carbon, bio-based approaches, DCPD, high-performance syntactic GSPU and hydrophilic polyurethane prepolymer.</p>
           </div>
-          <div className="card-body">
-           <p><em>We provide professional, unbiased polyurethane machine advice, with over 100 years of combined experience in polyurethane processing and products across the world.
-           <br />
-           <br />
-           Our engineering expertise, process and also product experience cover the full range of PU, PUR, PIR and hybrid processing techniques. These include continuous metal-faced panels and discontinuous panel production.
-           <br />
-           <br />
-           Furthermore, our chemical expertise covers the full range of developments, including many at the frontiers of the technology.</em></p>
+          <div className="grid-item-2">
+            <h4 className="text-center">Proudly partnering with..</h4>
+           <div className="autorim text-center">
+            <a href="https://www.autorim.co.uk/" target="_blank" rel="noreferrer">
+            <h5 className="autorim-head">AutoRIM</h5>
+            <p className="autorim-text">the polyurethane people</p>
+            </a>
+           </div>
+           <div className="krauss-maffei text-center">
+            <a href="https://www.kraussmaffei.com/" target="_blank" rel="noreferrer">
+            <h5 className="krauss-maffei-head">KraussMaffei</h5>
+            <p className="krauss-maffei-text">Pioneering Plastics</p>
+            </a>
+           </div>
           </div>
-        </div>
-        <div className="card-2 col text-center">
-          <div className="card-top">
-           <img src="src/about-2.png" alt="" />
-          </div>
-          <div className="card-body">
-           <p><em>Our technical specialists have product experience, including prototype samples; bringing new products rapidly to market; and growing output by orders of magnitude, in addition to expanding production geographically by rolling out to multi-site operations.
-           <br />
-           <br />
-           Our expertise includes chemical selection, production process definition, also new product development in existing and emerging markets. Addressing technical product aspects including fire resistance, structural performance, thermal optimisation, acoustic attenuation and also total life environmental aspects.</em></p>
-          </div>
-        </div>
-        <div className="card-3 col text-center">
-          <div className="card-top">
-           <img src="src/about-3.png" alt="" />
-          </div>
-          <div className="card-body">
-           <p><em>Our experience and market knowledge ranges across polyurethane insulation applications including construction, transport, cold storage, insulated pipelines, domestic refrigeration in addition to deep sea buoyancy.
-           <br />
-           <br />
-           Other areas of expertise include the introduction of pentane technology (C5 H12); use of LBA, for example Solstice, without pentane and blended with pentane; low carbon, bio-based and carbon capture approaches; dicyclopentadiene (DCPD); high performance syntactic GSPU (as well as IMPU) and also hydrophilic polyurethane prepolymer using PEG, for example Hypol.</em></p>
-          </div>
-        </div>
-      </div>
-  </section>
+        </div>  
+      </section>
     </div>
   );
 }
