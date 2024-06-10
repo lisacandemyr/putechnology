@@ -1,8 +1,11 @@
+import React, { useEffect } from "react";
 import HomeImage from "./img/home.png";
 import "./Home.css";
 import "./App.css";
 
 function Home() {
+
+
   return (
     <div className="Home">
       <main className="home" id="home">
