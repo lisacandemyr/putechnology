@@ -1,25 +1,18 @@
-.services {
-  background: var(--dark-color);
-  box-sizing: border-box;
-}
-
 .services h3 {
-  color: var(--background-color);
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 700;
   letter-spacing: -1.5px;
   line-height: 40px;
-  padding: 50px 50px 0 50px;   
+  padding: 75px 75px 0 75px;   
   margin: 0; 
 }
   
 .services .description {
-  color: var(--background-color);
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 0.25px;
   line-height: 22px;
-  padding: 15px 80px 50px 80px;
+  padding: 15px 75px 50px 75px;
   margin: 0;
 }
   
@@ -31,32 +24,13 @@
   margin: 0 20px;
   padding-bottom: 50px;
 }
-  
-.services .grid-item {
-  border-radius: 25px;
-  height: 587px;
-  min-width: 300px;
-  padding: 50px 20px 0 20px;
-}
 
-.services .analysis {
-  background: #ffd678;
-}
-
-.services .evaluation {
-  background: #ffb2d6;
-}
-
-.services .support {
-  background: #D0CFF7;
-}
-  
 .services img {
   align-items: center;
   height: 115px;
   margin-bottom: 20px;
 }
-  
+
 .services h4 {
   font-size: 40px;
   font-weight: 700;
@@ -67,8 +41,8 @@
   
 .services ul {
   display: grid;
-  grid-gap: 5px;
-  grid-row-gap: 5px;
+  grid-gap: 10px;
+  grid-row-gap: 10px;
   grid-template-columns: 1fr 1fr;
   list-style: none;
   padding: 0;
@@ -76,9 +50,10 @@
 
 /* Manual Colour Change */
 .services button {
-  background: rgba(255, 253, 241, 0.25);
+  background: rgba(242, 177, 241, 0.1);
   border: none;
   border-radius: 25px;
+  box-shadow:  inset 0 0 25px rgba(242, 177, 241, 0.25);
   color: var(--dark-color);
   font-size: 15px;
   font-weight: 300;
@@ -90,17 +65,23 @@
 
 /* Manual Colour Change */
 .services button:hover {
-  background: rgba(255, 253, 241, 0.5);
+  background: rgba(242, 177, 241, 0.2);
+  box-shadow:  inset 0 0 25px rgba(242, 177, 241, 0.35);
+  transform: scale(1.025);
 }
 
 .services .active {
-  background: var(--dark-color);
+  background: rgba(73, 73, 73, 1);
   color: var(--background-color);
+  transform: scale(1.025);
+
 } 
+
 
 /* Manual Colour Change */
 .services .active:hover {
   background: rgba(73, 73, 73, 0.75);
+  box-shadow: none;
 }
 
 .services .option {
@@ -131,6 +112,21 @@
 
 .option.fade-out {
   opacity: 0;
+}
+
+.services .text-container {
+  position: relative;
+}
+
+.services .grid-item {
+  background: rgba(255, 253, 240, 0.2);
+  backdrop-filter: blur(0.25px);
+  border-radius: 25px;
+  box-shadow:  inset 0 0 150px rgba(242, 177, 241, 0.35), var(--box-shadow);
+  height: 587px;
+  min-width: 300px;
+  overflow: hidden;
+  padding: 50px 20px 0 20px;
 }
 
 @media (max-width: 1398px) {

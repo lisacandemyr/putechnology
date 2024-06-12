@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import analysisImg from "./img/analysis.png";
 import evaluationImg from "./img/evaluation.png";
 import supportImg from "./img/support.png";
@@ -121,7 +121,7 @@ function Services() {
         <div className="services">
           <div className="grid">
             <div className="analysis grid-item text-center">
-              <div className="option-list">
+            <div className="text-container">
                 <img src={analysisImg} alt="" />
                 <h4>Analysis</h4>
                 <ul>
@@ -136,11 +136,11 @@ function Services() {
                     </li>
                   ))}
                 </ul>
-              </div>
               {renderContent(activeContent.analysis, fade.type === "analysis" ? "fade-out" : "fade-in")}
             </div>
+            </div>
             <div className="evaluation grid-item text-center">
-              <div className="option-list">
+              <div className="text-container">
                 <img src={evaluationImg} alt="" />
                 <h4>Evaluation</h4>
                 <ul>
@@ -155,11 +155,11 @@ function Services() {
                     </li>
                   ))}
                 </ul>
-              </div>
               {renderContent(activeContent.evaluation, fade.type === "evaluation" ? "fade-out" : "fade-in")}
             </div>
+            </div>
             <div className="support grid-item text-center">
-              <div className="option-list">
+              <div className="text-container">
                 <img src={supportImg} alt="" />
                 <h4>Support</h4>
                 <ul>
@@ -174,8 +174,8 @@ function Services() {
                     </li>
                   ))}
                 </ul>
-              </div>
               {renderContent(activeContent.support, fade.type === "support" ? "fade-out" : "fade-in")}
+              </div>
             </div>
           </div>
         </div>
