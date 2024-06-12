@@ -1,11 +1,8 @@
 .applications {
-  background: var(--dark-color);
-  box-sizing: border-box;
   padding: 50px 0 0 0;
 }
   
 .applications h4 {
-  color: var(--background-color);
   font-size: 40px;
   font-weight: 700;
   letter-spacing: -1.5px;
@@ -14,7 +11,6 @@
 }
   
 .applications .description {
-  color: var(--background-color);
   font-size: 18px;
   font-weight: 200;
   letter-spacing: 0.25px;
@@ -24,11 +20,16 @@
 }
 
 .applications .grid {
+  background: rgba(255, 253, 240, 0.2);
+  backdrop-filter: blur(0.25px);
+  border-radius: 25px;
+  box-shadow:  inset 0 0 150px rgba(242, 177, 241, 0.35);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
   grid-row-gap: 20px;
   padding: 0 20px;
+  margin: 20px;
 }
   
 .applications .grid-item {
@@ -41,7 +42,6 @@
   background-size: 50%;
   background-position: center;
   border-radius: 25px;
-  color: var(--background-color);
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
@@ -54,52 +54,105 @@
   transition: all 300ms ease-in-out;
 }
 
-.applications .grid-item-1::before {
-  background-image: url(img/application-1.png);
-  content: "";
-  padding-top: 135px;
+.applications .card-article {
+  position: relative;
+  overflow: hidden;
+ 
 }
 
-.applications .grid-item-2::before {
-  background-image: url(img/application-2.png);
-  content: "";
-  padding-top: 135px;
+.applications .card-img {
+  height: 60%;
+  width: 50%;
+  display: block;
+  opacity: 0.9;
+  margin: 50px auto;
+
 }
 
-.applications .grid-item-3::before {
-  background-image: url(img/application-3.png);
-  content: "";
-  padding-top: 135px;
+.applications .card-data {
+  width: 280px;
+  background: rgba(255, 253, 240, 0.9);
+  backdrop-filter: blur(5px);
+  border-radius: 25px;
+  box-shadow:  inset 0 0 150px rgba(255, 253, 240, 1);
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  margin-inline: auto;
+  transition: opacity 1s 1s;
 }
 
-.applications .grid-item-4::before {
-  background-image: url(img/application-4.png);
-  content: "";
-  padding-top: 135px;
+.applications .card-title {
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
-.applications .grid-item:hover::before {
-  content: "";
-  opacity: 0.25;
+.applications .card-article:hover .card-data {
+  animation: showData 1s forwards;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.applications .card-article:hover {
+  animation: removeOverflow 2s forwards;
+}
+
+.applications .card-article:not(:hover) {
+  animation: showOverflow 2s forwards;
+}
+
+.applications .card-article:not(:hover) .card-data {
+  animation: removeData 2s forwards;
+}
+
+@keyframes showData {
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
+}
+
+@keyframes removeOverflow {
+  to {
+    overflow: initial;
+  }
+}
+
+@keyframes removeData {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
+
+@keyframes showOverflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
 }
 
 .applications ul {
   list-style: none;
-  opacity: 0;
   padding: 0;
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  transform: translate(-18%, -50%);
   transition: opacity 300ms ease-in-out;
 }
 
-.applications .grid-item:hover ul {
-  opacity: 1;
-}
-
 .applications li {
-  color: var(--background-color);
   font-size: 13px;
 }
 
