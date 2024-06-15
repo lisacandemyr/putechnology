@@ -273,7 +273,7 @@ function Equipment() {
 
   return (
     <div className="Equipment">
-      <section className="equipment" id="equipment">
+      <section className="equipment fade-in" id="equipment">
         <div className="row">
           {Object.keys(equipmentContent).map((key, index) => (
             <button

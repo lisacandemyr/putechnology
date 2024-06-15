@@ -58,7 +58,7 @@ const applicationsData = [
 function Applications() {
   return (
     <div className="Applications">
-      <section className="applications" id="applications">
+      <section className="applications fade-in" id="applications">
         <h4 className="text-center">Polyurethane Insulation Applications</h4>
         <p className="description text-center">
           Our PU consultant team of senior industry specialists have extensive experience in processing all types of polyurethane chemicals and PU systems. We cover all applications, specialising in the processing of PU insulation-grade foams used in SIPs construction, transport, cold storage, insulated pipelines, domestic refrigeration and deep sea buoyancy. <strong>Our consultants provide impartial and independent advice in the following fields:</strong>

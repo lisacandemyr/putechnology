@@ -3,7 +3,7 @@ import "./Footer.css";
 function Footer() {
   return (
   <div className="Footer">
-   <footer className="contact" id="contact">
+   <footer className="contact fade-in" id="contact">
     <div className="grid">
       <div className="grid-item-1">
         <h3>Contact</h3>
