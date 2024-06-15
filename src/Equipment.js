@@ -134,7 +134,7 @@ function Equipment() {
           </div>
           <div className="grid-item-2">
             <img src={EquipmentTwo1} alt="Equipment 2-1" />
-            <img src={EquipmentTwo2} className="two" alt="Equipment 2-2" />
+            <img src={EquipmentTwo2} alt="Equipment 2-2" />
           </div>
         </div>
       </div>

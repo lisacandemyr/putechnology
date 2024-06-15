@@ -231,7 +231,7 @@
 }
 
 @media (max-width: 530px) { 
-.equipment-2 .two {
+.equipment-1 img, .equipment-2 img {
   display: none;
 }
 }
