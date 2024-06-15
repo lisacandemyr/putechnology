@@ -99,9 +99,9 @@
 }
 
 .services h5 {
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: -0.75px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.25px;
   line-height: 22px;
 }
   
@@ -227,7 +227,27 @@
   font-size: 35px;
   letter-spacing: -1.5px;
   line-height: 32px;
-}  
+} 
+
+.services p {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.services .option {
+  padding: 10px 0 30px 0;
+}
+
+.services .grid-item {
+  height: 560px;
+}
+}
+
+@media (max-width: 440px) {  
+.services .grid-item {
+  height: 580px;
+}
 }
 
 @media (max-width: 425px) {  
@@ -236,11 +256,11 @@
 }
 
 .services .grid-item {
-  height: 760px;
+  height: 700px;
 }
 }
 
-@media (max-width: 371.5px) {
+@media (max-width: 374px) {
 .services h3 {
   padding: 50px 20px 0 20px;  
 }
@@ -250,13 +270,7 @@
 }
 
 .services .grid-item {
-  height: 780px;
-}
-}
-
-@media (max-width: 366px) {
-.services .option {
-  padding: 10px 10px 30px 10px;
+  height: 715px;
 }
 }
 
@@ -272,25 +286,8 @@
 }
 }
 
-@media (max-width: 346px) {
-.services .grid-item {
-  height: 800px;
-}
-}
-
-@media (max-width: 335.5px) {
-.services .grid-item {
-  height: 780px;
-}
-
-.services .option {
-  padding: 10px 0 30px 0;
-}
-}
-
-@media (max-width: 326px) {
-.services .grid-item {
-  height: 800px;
-  min-width: 225px;
-}
+@media (max-width: 343.5px) {
+  .services .grid-item {
+    height: 730px;
+  }
 }
