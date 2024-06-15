@@ -55,3 +55,11 @@ footer {
   padding: 0 20px 50px 20px;
 }
 }
+
+@media (max-width: 450px) {  
+footer p {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+}
+}

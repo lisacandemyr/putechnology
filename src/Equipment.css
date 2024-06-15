@@ -232,25 +232,24 @@
 }
 
 @media (max-width: 530px) { 
-.equipment-1 img, .equipment-2 img {
+.equipment-1 .grid-item-2, .equipment-2 .grid-item-2 {
   display: none;
 }
 }
 
 @media (max-width: 450px) {    
 .equipment h4 {
-  font-size: 28px;
-  font-weight: 600;
-  letter-spacing: -0.25px;
-  line-height: 26px;
-  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  line-height: 40px;
 }
     
 .equipment h5 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: -0.25px;
-  line-height: 20px;
+  line-height: 22px;
 }
     
 .equipment p {
