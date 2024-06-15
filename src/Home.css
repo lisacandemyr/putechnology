@@ -290,7 +290,7 @@ main .text-container {
 
 main img {
   height: 220px;
-  top: -42px;
+  top: -36px;
   z-index: -1;
 }
 }
@@ -308,14 +308,14 @@ main h2 {
 }
 
 main img {
-  height: 200px;
+  height: 210px;
   top: -30px;
 }
 }
 
 @media (max-width: 350px) {
 main img {
-  height: 180px;
-  top: -20px;
+  height: 200px;
+  top: -25px;
 }
 }
