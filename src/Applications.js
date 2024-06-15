@@ -5,6 +5,55 @@ import ApplicationThree from "./img/application-3.png";
 import ApplicationFour from "./img/application-4.png";
 import './Applications.css';
 
+const applicationsData = [
+  {
+    img: ApplicationOne,
+    title: "Building Systems",
+    items: [
+      "Modern methods of construction",
+      "Low and zero carbon solutions",
+      "PassivHaus solutions",
+      "Low Global Warming Potential (GWP) solutions",
+      "Structurally insulated panels (SIPs)",
+      "Timber frame closed panel building systems",
+      "Innovative hybrid building systems"
+    ]
+  },
+  {
+    img: ApplicationTwo,
+    title: "Construction Solutions",
+    items: [
+      "Stressed skin panels",
+      "Metal faced cladding panels",
+      "Modular offsite construction",
+      "Prefabricated Prefinished Volumetric Construction (PPVC)"
+    ]
+  },
+  {
+    img: ApplicationThree,
+    title: "Garden Leisure Buildings",
+    items: [
+      "Garden offices",
+      "Garden studios",
+      "Log cabins",
+      "Garden leisure buildings",
+      "Quick assembly disaster recovery shelters"
+    ]
+  },
+  {
+    img: ApplicationFour,
+    title: "Advanced Applications",
+    items: [
+      "Cold store panels and doors",
+      "Rotational moulding",
+      "Deep sea flotation and buoyancy",
+      "Insulated pipelines",
+      "Hot water storage",
+      "District heating",
+      "Pentane and Liquid Blowing Agent (LBA) introduction including solstice"
+    ]
+  }
+];
 
 function Applications() {
   return (
@@ -15,65 +64,19 @@ function Applications() {
           Our PU consultant team of senior industry specialists have extensive experience in processing all types of polyurethane chemicals and PU systems. We cover all applications, specialising in the processing of PU insulation-grade foams used in SIPs construction, transport, cold storage, insulated pipelines, domestic refrigeration and deep sea buoyancy. <strong>Our consultants provide impartial and independent advice in the following fields:</strong>
         </p>
         <div className="grid">
-          <div className="grid-item grid-item-1 card-article">
-            <img src={ApplicationOne} className="card-img" alt="" />
-
-            <div className="card-data">
-              <h2 className="card-title">Building Systems</h2>
-              <ul>
-                <li>• Modern methods of construction</li>
-                <li>• Low and zero carbon solutions</li>
-                <li>• PassivHaus solutions</li>
-                <li>• Low Global Warming Potential (GWP) solutions</li>
-                <li>• Structurally insulated panels (SIPs)</li>
-                <li>• Timber frame closed panel building systems</li>
-                <li>• Innovative hybrid building systems</li>
-              </ul>
+          {applicationsData.map((application, index) => (
+            <div key={index} className={`grid-item grid-item-${index + 1} card-article`}>
+              <img src={application.img} className="card-img" alt={application.title} />
+              <div className="card-data">
+                <h2 className="card-title">{application.title}</h2>
+                <ul>
+                  {application.items.map((item, idx) => (
+                    <li key={idx}>• {item}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
-          <div className="grid-item grid-item-2 card-article">
-            <img src={ApplicationTwo} className="card-img" alt="" />
-
-            <div className="card-data">
-              <h2 className="card-title">Construction Solutions</h2>
-              <ul>
-                <li>• Stressed skin panels</li>
-                <li>• Metal faced cladding panels</li>
-                <li>• Modular offsite construction</li>
-                <li>• Prefabricated Prefinished Volumetric Construction (PPVC)</li>
-              </ul>
-            </div>
-          </div>
-          <div className="grid-item grid-item-3 card-article">
-            <img src={ApplicationThree} className="card-img" alt="" />
-            
-            <div className="card-data">
-              <h2 className="card-title">Garden Leisure Buildings</h2>
-              <ul>
-                <li>• Garden offices</li>
-                <li>• Garden studios</li>
-                <li>• Log cabins</li>
-                <li>• Garden leisure buildings</li>
-                <li>• Quick assembly disaster recovery shelters</li>
-              </ul>
-            </div>
-          </div>
-          <div className="grid-item grid-item-4 card-article">
-            <img src={ApplicationFour} className="card-img" alt="" />
-
-            <div className="card-data">
-              <h2 className="card-title">Advanced Applications</h2>
-              <ul>
-                <li>• Cold store panels and doors</li>
-                <li>• Rotational moulding</li>
-                <li>• Deep sea flotation and buoyancy</li>
-                <li>• Insulated pipelines</li>
-                <li>• Hot water storage</li>
-                <li>• District heating</li>
-                <li>• Pentane and Liquid Blowing Agent (LBA) introduction including solstice</li>
-              </ul>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
     </div>

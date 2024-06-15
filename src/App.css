@@ -4,22 +4,15 @@
   --font-autorim: "Quicksand", sans-serif;
   --font-krauss-maffei: "Roboto", sans-serif;
   --background-color: rgb(255, 253, 240);
-  --light-color: rgb(227, 244, 247);
-  --border-color: #f0f0f0;
   --dark-color: rgb(73, 73, 73);
   --box-shadow: 0 0 2.5px rgba(145, 145, 145, 0.1);
   --circle-size: 90%;
-  --blending: multiply;
 }
 
 body {
   background: linear-gradient(30deg, rgba(255, 253, 240, 1), rgba(255, 253, 240, 1), rgba(255, 253, 240, 1), rgba(255, 253, 240, 1), rgba(242, 177, 241, 0.75));
   color: var(--dark-color);
   font-family: var(--font-family-paragraph);
-}
-
-.hidden {
-  display: none;
 }
 
 .gradients-container {
@@ -121,6 +114,14 @@ body {
   }
 }
 
+.fade-in {
+  animation: fadeIn 2.5s;
+}
+
+.fade-out {
+  animation: fadeOut 2.5s;
+}
+
 .float-left {
   animation: floatLeft 2.5s;
 }
@@ -213,6 +214,10 @@ opacity: 1;
 }
 }
 
+.hidden {
+  display: none;
+}
+
 .grain {
   height: 100%;
   width: 100%;
@@ -277,6 +282,7 @@ opacity: 1;
 ::-webkit-scrollbar {
   width: 20px;
 }
+
 /* Manual Colour Change*/
 ::-webkit-scrollbar-track {
   background: rgb(249, 247, 236);

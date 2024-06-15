@@ -1,9 +1,13 @@
 main {
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   overflow: hidden;
-  padding: 150px 0 172px 0;
+  padding: 150px 0 175px 0;
+}
+
+main .text-container {
+  position: relative;
+  left: 35px;
 }
 
 main h1 {
@@ -49,6 +53,12 @@ main h2::after {
 main h2:hover::before,
 main h2:hover::after {
   animation: glitch 1.5s infinite alternate-reverse;
+}
+
+main img {
+  position: relative;
+  top: -11px;
+  right: 35px;
 }
 
 @keyframes glitch {
@@ -136,17 +146,6 @@ main h2:hover::after {
     clip: rect(40px, 9999px, 60px, 0);
     transform: skew(5deg);
   }
-}
-
-main .text-container {
-  position: relative;
-  left: 35px;
-}
-
-main img {
-  position: relative;
-  top: -11px;
-  right: 35px;
 }
 
 @media (max-width: 1250px) {    
@@ -280,15 +279,10 @@ main h2 {
 }
 
 @media (max-width: 450px) { 
-main h1 {
-  font-size: 60px;
-  letter-spacing: -3.5px;
-}
-    
 main h2 {
-  font-size: 27px;
+  font-size: 35px;
   letter-spacing: -1.5px;
-  margin: -22px 0 0 2px;
+  top: -3px;
 }
 
 main .text-container {
@@ -302,6 +296,17 @@ main img {
 }
     
 @media (max-width: 400px) {
+main h1 {
+  font-size: 30px;
+  letter-spacing: -1.25px;
+}
+
+main h2 {
+  font-size: 30px;
+  letter-spacing: -1.25px;
+  top: -6px;
+}
+
 main img {
   top: -37px;
   width: 350px;

@@ -23,9 +23,11 @@ function Footer() {
         SK23 7DQ
         <br />
         <br />
+        <strong>
         Tel: 01663 735032 / Mob: 07841 046596
         <br />
         Email: <a href="mailto:mail@putechnology.com">mail@putechnology.com</a>
+        </strong>
         </p>
       </div>
       <div className="grid-item-2">

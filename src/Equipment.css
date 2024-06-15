@@ -1,37 +1,29 @@
 .equipment {
-overflow: hidden;
-background: rgba(255, 253, 240, 0.2);
-  backdrop-filter: blur(0.25px);
+  background: rgba(255, 253, 240, 0.2);
+  backdrop-filter: blur(5px);
   border-radius: 25px;
   box-shadow:  inset 0 0 150px rgba(242, 177, 241, 0.35), var(--box-shadow);
-  margin: 75px 20px;
+  margin: 75px 20px 100px 20px;
 }
   
 .equipment .row {
   gap: 10px;
   row-gap: 10px;
   margin: 0;
-  padding: 50px 40px 0 40px;
+  padding: 50px 20px 0 20px;
 }
 
-/* Manual Colour Change */
-.services .active:hover {
-  background: rgba(242, 177, 241, 0.3);
-  box-shadow:  inset 0 0 25px rgba(179, 60, 159, 0.15);
-}
-
-  
 /* Manual Colour Change */
 .equipment button {
   background: rgba(242, 177, 241, 0.1);
   border: none;
   border-radius: 25px;
-  box-shadow:  inset 0 0 25px rgba(242, 177, 241, 0.25), var(--box-shadow);
+  box-shadow: inset 0 0 25px rgba(242, 177, 241, 0.25), var(--box-shadow);
   color: var(--dark-color);
   font-size: 15px;
   font-weight: 300;
-  height: 50px;
-  padding: 5px;
+  height: 52px;
+  padding: 5px 10px;
   transition: all 500ms ease-in-out;
   width: 100%;
 }
@@ -39,33 +31,26 @@ background: rgba(255, 253, 240, 0.2);
 /* Manual Colour Change */
 .equipment button:hover {
   background: rgba(242, 177, 241, 0.2);
-  box-shadow:  inset 0 0 25px rgba(242, 177, 241, 0.35);
-}
-
-
-/* Manual Colour Change */
-.services .active:hover {
-  background: rgba(73, 73, 73, 0.75);
-  box-shadow: none;
+  box-shadow: inset 0 0 25px rgba(242, 177, 241, 0.35), var(--box-shadow);
   transform: scale(1.025);
 }
 
 /* Manual Colour Change */
 .equipment .active {
-  background: rgba(73, 73, 73, 1);
-  box-shadow:   var(--box-shadow);
+  background: var(--dark-color);
+  box-shadow: var(--box-shadow);
   color: var(--background-color);
   transform: scale(1.025);
 }
 
 /* Manual Colour Change */
 .equipment .active:hover {
-  background: rgba(73, 73, 73, 0.75);
-  box-shadow:  none;
+  background: var(--dark-color);
+  box-shadow: none;
 }
   
 .equipment-1, .equipment-2, .equipment-3, .equipment-4, .equipment-5 {
-  padding: 50px 50px 35px 50px;
+  padding: 50px;
 }
   
 .equipment h4 {
@@ -175,39 +160,35 @@ background: rgba(255, 253, 240, 0.2);
   transition: opacity 500ms ease-out;
 }
 
-@media (max-width: 1448px) {   
+@media (max-width: 1469px) {   
 .equipment button {
   height: 75px;
-  padding: 10px 10px;
 }
 }
 
 @media (max-width: 915px) {  
 .equipment .row {
   display: block;
-  gap: 5px;
 }
 
 .equipment button {
-  height: 45px;
-  margin-bottom: 5px;
+  height: 52px;
+  margin-bottom: 10px;
 }
 }
 
 @media (max-width: 856px) {  
-.equipment-5 .grid {
-  grid-template-columns: 2fr 1fr;
-}
-}
-
-@media (max-width: 850px) {  
 .equipment-2 .grid {
   grid-template-columns: 1fr;
 }
-  
+
 .equipment-2 .grid-item-2 {
   display: flex;
   margin-top: 35px;
+}
+
+.equipment-5 .grid {
+  grid-template-columns: 2fr 1fr;
 }
 }
       
@@ -215,29 +196,23 @@ background: rgba(255, 253, 240, 0.2);
 .equipment-1, .equipment-2, .equipment-3, .equipment-4, .equipment-5 {
   padding: 40px;
 }
-
-.equipment .row {
-  padding: 50px 20px 0 20px;
-}
 }
 
-@media (max-width: 684px) {  
+@media (max-width: 684px) { 
+.equipment-1 .grid {
+  grid-template-columns: 1fr;
+}
+    
+.equipment-1 .grid-item-2 {
+  margin: 35px auto 35px auto;
+}
+  
 .equipment-5 .grid {
   grid-template-columns: 1fr;
 }
 
 .equipment-5 img {
   display: none;
-}
-}
- 
-@media (max-width: 675px) {
-.equipment-1 .grid {
-  grid-template-columns: 1fr;
-}
-  
-.equipment-1 .grid-item-2 {
-  margin: 35px auto 35px auto;
 }
 }
 
@@ -258,5 +233,11 @@ background: rgba(255, 253, 240, 0.2);
 @media (max-width: 530px) { 
 .equipment-2 .two {
   display: none;
+}
+}
+
+@media (max-width: 366px) { 
+.equipment-1, .equipment-2, .equipment-3, .equipment-4, .equipment-5 {
+  padding: 20px;
 }
 }

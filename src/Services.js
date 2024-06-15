@@ -5,13 +5,8 @@ import supportImg from "./img/support.png";
 import "./Services.css";
 import "./App.css";
 
-function Services() {
-  const [activeAnalysis, setActiveAnalysis] = useState("analysis-1");
-  const [activeEvaluation, setActiveEvaluation] = useState("evaluation-1");
-  const [activeSupport, setActiveSupport] = useState("support-1");
-  const [fade, setFade] = useState({ type: "", key: "" });
-
-  const analysisContent = {
+const contentData = {
+  analysis: {
     "analysis-1": {
       headline: "Technology Audit",
       text: "Conducting thorough audits to assess the suitability of PU, PUR, PIR and hybrid methods. Utilising pentane and advanced hybrid blowing agents while ensuring Health & Safety compliance. Expertise in manufacturing continuous and discontinuous panels with flexible, rigid, metallic and non-metallic facings."
@@ -28,16 +23,15 @@ function Services() {
       headline: "Failure Analysis",
       text: "Diagnosing and resolving issues using our century-long expertise in polyurethane processing worldwide. Our comprehensive analysis includes evaluating processing discrepancies and chemical compatibility."
     },
-  };
-
-  const evaluationContent = {
+  },
+  evaluation: {
     "evaluation-1": {
       headline: "Production Development",
       text: "Utilising our expertise to streamline market entry, covering various chemical and processing options. Specialising in equipment optimisation, plant enhancements and cost-effective solutions for seamless product and production development."
     },
     "evaluation-2": {
       headline: "Production Optimisation",
-      text: "Bringing extensive experience in PU, PUR and PIR technologies, we excel in optimising production processes.  Our skills include using high and low-pressure metering equipment, as well as advanced pentane and LBA blowing agent technologies."
+      text: "Bringing extensive experience in PU, PUR and PIR technologies, we excel in optimising production processes. Our skills include using high and low-pressure metering equipment, as well as advanced pentane and LBA blowing agent technologies."
     },
     "evaluation-3": {
       headline: "Property Sourcing",
@@ -47,9 +41,8 @@ function Services() {
       headline: "Financial Consultancy",
       text: "Providing impartial advice alongside your financial team, we navigate valuation reporting and funding options for informed decision-making and strategic planning."
     },
-  };
-
-  const supportContent = {
+  },
+  support: {
     "support-1": {
       headline: "Manufacturing Advisory",
       text: "Delivering thorough consultation on diverse PU, PUR, PIR and hybrid methods, free from supplier biases. From continuous metal-faced panels to discontinuous panel production, we offer insights and expertise for prototype samples and beyond."
@@ -66,37 +59,25 @@ function Services() {
       headline: "Expert Witness",
       text: "Offering authoritative and impartial opinions as expert witnesses in litigation cases, covering areas such as patent disputes and project disagreements."
     },
-  };
+  },
+};
 
+function Services() {
   const [activeContent, setActiveContent] = useState({
-    analysis: analysisContent[activeAnalysis],
-    evaluation: evaluationContent[activeEvaluation],
-    support: supportContent[activeSupport]
+    analysis: contentData.analysis["analysis-1"],
+    evaluation: contentData.evaluation["evaluation-1"],
+    support: contentData.support["support-1"],
   });
+  const [fade, setFade] = useState({ type: "", key: "" });
 
   useEffect(() => {
     if (fade.type && fade.key) {
       const timer = setTimeout(() => {
         setFade({ type: "", key: "" });
-        if (fade.type === "analysis") {
-          setActiveContent(prevState => ({
-            ...prevState,
-            analysis: analysisContent[fade.key]
-          }));
-          setActiveAnalysis(fade.key);
-        } else if (fade.type === "evaluation") {
-          setActiveContent(prevState => ({
-            ...prevState,
-            evaluation: evaluationContent[fade.key]
-          }));
-          setActiveEvaluation(fade.key);
-        } else {
-          setActiveContent(prevState => ({
-            ...prevState,
-            support: supportContent[fade.key]
-          }));
-          setActiveSupport(fade.key);
-        }
+        setActiveContent((prevState) => ({
+          ...prevState,
+          [fade.type]: contentData[fade.type][fade.key],
+        }));
       }, 500);
       return () => clearTimeout(timer);
     }
@@ -121,60 +102,60 @@ function Services() {
         <div className="services">
           <div className="grid">
             <div className="analysis grid-item text-center">
-            <div className="text-container">
+              <div className="text-container">
                 <img src={analysisImg} alt="" />
                 <h4>Analysis</h4>
                 <ul>
-                  {Object.keys(analysisContent).map(key => (
+                  {Object.keys(contentData.analysis).map((key) => (
                     <li key={key}>
                       <button
-                        className={`analysis-${key.slice(-1)} ${activeAnalysis === key ? "active" : ""}`}
+                        className={`analysis-${key.slice(-1)} ${activeContent.analysis === contentData.analysis[key] ? "active" : ""}`}
                         onClick={() => handleClick("analysis", key)}
                       >
-                        {analysisContent[key].headline}
+                        {contentData.analysis[key].headline}
                       </button>
                     </li>
                   ))}
                 </ul>
-              {renderContent(activeContent.analysis, fade.type === "analysis" ? "fade-out" : "fade-in")}
-            </div>
+                {renderContent(activeContent.analysis, fade.type === "analysis" ? "fade-out" : "fade-in")}
+              </div>
             </div>
             <div className="evaluation grid-item text-center">
               <div className="text-container">
                 <img src={evaluationImg} alt="" />
                 <h4>Evaluation</h4>
                 <ul>
-                  {Object.keys(evaluationContent).map(key => (
+                  {Object.keys(contentData.evaluation).map((key) => (
                     <li key={key}>
                       <button
-                        className={`evaluation-${key.slice(-1)} ${activeEvaluation === key ? "active" : ""}`}
+                        className={`evaluation-${key.slice(-1)} ${activeContent.evaluation === contentData.evaluation[key] ? "active" : ""}`}
                         onClick={() => handleClick("evaluation", key)}
                       >
-                        {evaluationContent[key].headline}
+                        {contentData.evaluation[key].headline}
                       </button>
                     </li>
                   ))}
                 </ul>
-              {renderContent(activeContent.evaluation, fade.type === "evaluation" ? "fade-out" : "fade-in")}
-            </div>
+                {renderContent(activeContent.evaluation, fade.type === "evaluation" ? "fade-out" : "fade-in")}
+              </div>
             </div>
             <div className="support grid-item text-center">
               <div className="text-container">
                 <img src={supportImg} alt="" />
                 <h4>Support</h4>
                 <ul>
-                  {Object.keys(supportContent).map(key => (
+                  {Object.keys(contentData.support).map((key) => (
                     <li key={key}>
                       <button
-                        className={`support-${key.slice(-1)} ${activeSupport === key ? "active" : ""}`}
+                        className={`support-${key.slice(-1)} ${activeContent.support === contentData.support[key] ? "active" : ""}`}
                         onClick={() => handleClick("support", key)}
                       >
-                        {supportContent[key].headline}
+                        {contentData.support[key].headline}
                       </button>
                     </li>
                   ))}
                 </ul>
-              {renderContent(activeContent.support, fade.type === "support" ? "fade-out" : "fade-in")}
+                {renderContent(activeContent.support, fade.type === "support" ? "fade-out" : "fade-in")}
               </div>
             </div>
           </div>

@@ -1,100 +1,89 @@
-.applications {
-  padding: 50px 0 0 0;
+.applications { 
+  padding: 50px 0 75px 0;
 }
   
 .applications h4 {
   font-size: 40px;
   font-weight: 700;
   letter-spacing: -1.5px;
-  line-height: 40px; 
-  margin: 0; 
+  line-height: 38px;
+  margin: 0;
 }
   
 .applications .description {
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 0.25px;
   line-height: 22px;
-  padding: 15px 80px 0 80px;
   margin: 0;
+  padding: 15px 60px 50px 60px;
 }
 
 .applications .grid {
   background: rgba(255, 253, 240, 0.2);
-  backdrop-filter: blur(0.25px);
+  backdrop-filter: blur(5px);
   border-radius: 25px;
-  box-shadow:  inset 0 0 150px rgba(242, 177, 241, 0.35), var(--box-shadow);
+  box-shadow: inset 0 0 150px rgba(242, 177, 241, 0.35), var(--box-shadow);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
   grid-row-gap: 20px;
-  padding: 0 20px;
-  margin: 20px;
-}
-  
-.applications .grid-item {
-  height: 300px;
-  position: relative;
-}
-
-.applications .grid-item::before {
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: center;
-  border-radius: 25px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  transition: all 300ms ease-in-out;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 20px;
 }
 
 .applications .card-article {
-  position: relative;
   overflow: hidden;
- 
+  position: relative;  
 }
 
 .applications .card-img {
+  display: block;
   height: 60%;
   width: 50%;
-  display: block;
-  opacity: 0.9;
   margin: 50px auto;
-
+  opacity: 0.9;
 }
 
 .applications .card-data {
-  width: 280px;
-  background: rgba(255, 253, 240, 0.9);
+  background: rgba(255, 253, 240, 0.85);
   backdrop-filter: blur(5px);
   border-radius: 25px;
   box-shadow:  inset 0 0 150px rgba(255, 253, 240, 1), var(--box-shadow);
-  padding: 20px;
-  box-shadow: var(--box-shadow);
+  margin-inline: auto;
+  padding: 30px 10px 20px 20px;
   position: absolute;
   bottom: -9rem;
   left: 0;
   right: 0;
   opacity: 0;
-  margin-inline: auto;
   transition: opacity 1s 1s;
+  width: 280px;
 }
 
 .applications .card-title {
-  font-size: 30px;
-  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.25px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+.applications ul {
+  list-style: none;
+  padding: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.applications li {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
 }
 
 .applications .card-article:hover .card-data {
   animation: showData 1s forwards;
   opacity: 1;
-  transition: opacity 0.3s;
+  transition: opacity 0.5s;
 }
 
 .applications .card-article:hover {
@@ -146,71 +135,145 @@
   }
 }
 
-.applications ul {
-  list-style: none;
-  padding: 0;
-  transition: opacity 300ms ease-in-out;
+@keyframes showDataResponsive {
+  50% {
+    transform: translateY(-5rem);
+  }
+  100% {
+    transform: translateY(-3rem);
+  }
 }
 
-.applications li {
-  font-size: 13px;
+@keyframes removeDataResponsive {
+  0% {
+    transform: translateY(-3rem);
+  }
+  50% {
+    transform: translateY(-5rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
 }
 
-@media (max-width: 850px) {  
+@media (max-width: 1220px) {  
+.applications .card-data {
+  width: 270px;
+}
+} 
+
+@media (max-width: 1180px) {  
+.applications .card-data {
+  width: 260px;
+}
+} 
+
+@media (max-width: 1140px) {  
+.applications .card-data {
+  width: 250px;
+}
+} 
+
+@media (max-width: 1100px) {  
+.applications .card-data {
+  width: 240px;
+}
+} 
+
+@media (max-width: 1060px) {  
+.applications .card-data {
+  width: 230px;
+}
+}
+
+@media (max-width: 1020px) {  
 .applications .grid {
+  background: transparent;
+  backdrop-filter: none;
+  box-shadow: none;
   grid-template-columns: 1fr 1fr;
 }
 
+.applications .grid-item {
+  background: rgba(255, 253, 240, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 25px;
+  box-shadow:  inset 0 0 150px rgba(242, 177, 241, 0.35), var(--box-shadow);
+}
+
+.applications .card-img {
+  height: 65%;
+  width: 35%;
+}
+
+.applications .card-data {
+  width: 280px;
+}
+} 
+
+@media (max-width: 850px) {  
 .applications h4 {
-  padding: 0 25px;  
+  padding: 0 25px 0 25px;  
 }
   
 .applications .description {
-  padding: 15px 40px 0 40px;
+  padding: 15px 40px 50px 40px;
 }
 }   
 
 @media (max-width: 700px) {  
+.applications .grid {
+  grid-template-columns: 1fr;
+}
+
+.applications .card-article {
+  overflow: visible; 
+}
+
+.applications .card-data {
+  bottom: -5rem;
+}
+
+.applications .card-article:hover .card-data {
+  animation: showDataResponsive 1s forwards;
+}
+
+.applications .card-article:not(:hover) .card-data {
+  animation: removeDataResponsive 3s forwards;
+}
+
+.applications .card-img {
+  height: 60%;
+  width: 30%;
+}
+}
+
+@media (max-width: 550px) {     
 .applications .grid-item {
-  height: 250px;
-}
-}
-
-@media (max-width: 600px) {  
-.applications .grid-item::before {
-  background-size: 60%;
-}
-}
-
-@media (max-width: 500px) {  
-.applications .grid-item::before {
-  background-size: 70%;
-}
+  padding: 20px 0;
+} 
 }
 
 @media (max-width: 450px) {     
 .applications h4 {
   font-size: 35px;
   letter-spacing: -1.5px;
-  line-height: 37px;
+  line-height: 32px;
+}   
+
+.applications .card-img {
+  height: 60%;
+  width: 40%;
+}
+}
+
+@media (max-width: 371.5px) { 
+.applications h4 {
+  padding: 50px 20px 0 20px;  
 }  
-
-.applications .grid {
-  padding: 20px 20px 40px 20px;
-}
-
-.applications .grid-item {
-  height: 200px;
-}
-
-.applications .grid-item::before {
-  background-size: 80%;
-}
-}
-
-@media (max-width: 399.5px) {  
+  
 .applications .description {
-  padding: 15px 20px 0 20px;
+  padding: 15px 20px 50px 20px;
 }
 }
 
@@ -218,14 +281,11 @@
 .applications h4 {
   font-size: 30px;
   letter-spacing: -1.25px;
-  line-height: 32px;
+  line-height: 30px;
 } 
 
-.applications .grid {
-  padding: 20px;
-}
-
-.applications .grid-item {
-  height: 150px;
+.applications .card-img {
+  height: 60%;
+  width: 50%;
 }
 }
