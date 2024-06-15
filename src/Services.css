@@ -287,7 +287,7 @@
 }
 
 @media (max-width: 343.5px) {
-  .services .grid-item {
-    height: 730px;
-  }
+.services .grid-item {
+  height: 730px;
+}
 }
