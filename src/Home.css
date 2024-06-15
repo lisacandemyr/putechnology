@@ -2,7 +2,8 @@ main {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  padding: 150px 0 175px 0;
+  padding-top: 150px;
+  height: 75vh;
 }
 
 main .text-container {
@@ -160,8 +161,7 @@ main .text-container {
 }
 
 main img {
-  height: 95%;
-  top: -10px;
+  top: -13px;
   right: 27px;
 }
 }
@@ -178,8 +178,7 @@ main .text-container {
 }
   
 main img {
-  height: 90%;
-  top: -8px;
+  top: -17px;
   right: 21px;
 }
 }
@@ -201,9 +200,9 @@ main .text-container {
 }
     
 main img {
-  height: 85%;
-  top: -12px;
-  right: 5px;
+  height: 200px;
+  top: -10px;
+  right: 0;
 }
 }
 
@@ -219,9 +218,9 @@ main .text-container {
 }
       
 main img {
-  height: 80%;
-  top: -12px;
-  right: -5px;
+  height: 180px;
+  top: -5px;
+  right: -10px;
 }
 }
 
@@ -290,6 +289,7 @@ main .text-container {
 }
 
 main img {
+  height: 220px;
   top: -42px;
   z-index: -1;
 }
@@ -308,14 +308,14 @@ main h2 {
 }
 
 main img {
-  top: -37px;
-  width: 350px;
+  height: 200px;
+  top: -30px;
 }
 }
 
 @media (max-width: 350px) {
 main img {
+  height: 180px;
   top: -20px;
-  width: 300px;
 }
 }
