@@ -50,7 +50,7 @@ function App() {
       <div className="section"><Equipment /></div>
       <div className="section"><Applications /></div>
       <div className="section"><About /></div>
-      <Footer />
+      <div className="section"><Footer /></div>
     </div>
   );
 }
