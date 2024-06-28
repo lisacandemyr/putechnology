@@ -20,7 +20,7 @@ function App() {
           entry.target.classList.remove('visible');
         }
       });
-    }, { threshold: 0.475 });
+    }, { threshold: 0.2 });
 
     sections.forEach(section => {
       observer.observe(section);
