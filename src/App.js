@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import Navbar from "./Navbar.js";
 import Introduction from "./Home.js";
 import Services from "./Services.js";
@@ -8,6 +9,30 @@ import Footer from "./Footer.js";
 import "./App.css";
 
 function App() {
+  useEffect(() => {
+    const sections = document.querySelectorAll('.section');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      });
+    }, { threshold: 0.475 });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+
+    return () => {
+      sections.forEach(section => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
+
   return (
     <div className="App">
       <div className="grain"></div>
@@ -20,21 +45,14 @@ function App() {
       </div>
       <div className="overlay"></div>
       <Navbar />
-      <Introduction />
-      <Services />
-      <Equipment />
-      <Applications />
-      <About />
+      <div className="section"><Introduction /></div>
+      <div className="section"><Services /></div>
+      <div className="section"><Equipment /></div>
+      <div className="section"><Applications /></div>
+      <div className="section"><About /></div>
       <Footer />
     </div>
   );
 }
 
 export default App;
-
-
-
-
-
-
-
